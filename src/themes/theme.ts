@@ -6,7 +6,7 @@ const baseTheme = createTheme({
     fontSize: 14,
   }
 })
-​
+
 const darkTheme = createTheme({
   ...baseTheme,
   palette: {
@@ -45,6 +45,6 @@ const lightTheme = createTheme({
     }
   }
 })
-​
+
 export { darkTheme, lightTheme }
   
