@@ -1,8 +1,8 @@
 import { createTheme } from '@mui/material/styles';
-​
+
 const baseTheme = createTheme({
   typography: {
-    fontFamily: "'Work Sans', sans-serif",
+    fontFamily: "'Nunito Sans',Work Sans', sans-serif",
     fontSize: 14,
   }
 })
