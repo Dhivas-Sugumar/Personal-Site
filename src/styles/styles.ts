@@ -1,5 +1,16 @@
 import styled from '@emotion/styled';
 
+const PageContainer = styled.div`
+  min-height: 100vh; 
+  margin:0;
+  display:flex; 
+  flex-direction:column;
+`
+
+const BodyContainer = styled.div`
+  flex:1;
+`
+
 const H1 = styled.h1`
   font-size: clamp(1.5em, 9.5vw, 6.5em);
   letter-spacing: 0.04em;
@@ -28,6 +39,6 @@ const P = styled.p`
   line-height: 1.4em;
 `;
 
-export { H1, H2, H3, H4, P };
+export { PageContainer, BodyContainer, H1, H2, H3, H4, P };
 
 
