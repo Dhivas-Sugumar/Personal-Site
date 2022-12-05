@@ -31,7 +31,7 @@ function MyApp({ Component, pageProps }: AppProps) {
       <ThemeProvider theme={theme}>
         <CssBaseline enableColorScheme />
         <SwitchModeButton/>
-        <Component {...pageProps} color="primary"/>
+        <Component {...pageProps}/>
       </ThemeProvider>
       </ColorContext.Provider>
   )
