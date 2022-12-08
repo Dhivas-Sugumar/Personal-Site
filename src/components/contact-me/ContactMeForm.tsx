@@ -4,12 +4,10 @@ const ContactMeForm : React.FC = () => {
 
     const [name , setName] = useState('');
     const [email , setEmail] = useState('');
-    const [messgae , setMessage] = useState('');
+    const [message , setMessage] = useState('');
 
     const handleSubmit = (e) => {
         e.preventDefault();
-    
-        setSendInProgress(true);
         fetch("/api/email", {
           method: "POST",
           headers: {
@@ -23,21 +21,17 @@ const ContactMeForm : React.FC = () => {
         })
           .then((res) => {
             if (res.status !== 200) {
-              setMessageCallout("📧 Message Failed to Send! 😵");
-              setHsla("hsla(10, 50%, 50%, .10)");
+              // toast error
+              // reset values
             }
-    
-            setSendInProgress(false);
-            setMessageSent(true);
+            // toast success
           })
           .catch((err) => {
-            console.log(err);
-            setMessageCallout("📧 Message Failed to Send! 😵");
-            setHsla("hsla(10, 50%, 50%, .10)");
-            setSendInProgress(false);
-            setMessageSent(true);
+              // toast error
+              // reset values
           });
       };
+
 
     return (
 <form onSubmit={handleSubmit}>
@@ -47,7 +41,7 @@ const ContactMeForm : React.FC = () => {
               type="text"
               required
               placeholder="bram"
-              onChange={() => setName(event.target.value)}
+              onChange={e => setName(e.target.value)}
             />
           </label>
           <br />
@@ -58,7 +52,7 @@ const ContactMeForm : React.FC = () => {
               type="text"
               required
               placeholder="bram@bram.com"
-              onChange={() => setEmail(event.target.value)}
+              onChange={e => setEmail(e.target.value)}
             />
           </label>
           <br />
@@ -69,7 +63,7 @@ const ContactMeForm : React.FC = () => {
               type="text"
               required
               placeholder="What's on your mind?"
-              onChange={() => setMessage(event.target.value)}
+              onChange={e => setMessage(e.target.value)}
             />
           </label>
           <br />
