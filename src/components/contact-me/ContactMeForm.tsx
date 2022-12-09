@@ -1,3 +1,4 @@
+import { FormLabel, TextField } from "@mui/material";
 import React, { useState } from "react";
  
 const ContactMeForm : React.FC = () => {
@@ -21,53 +22,46 @@ const ContactMeForm : React.FC = () => {
         })
           .then((res) => {
             if (res.status !== 200) {
-              // toast error
-              // reset values
+              alert("Message send failed!")
             }
-            // toast success
+            alert("Message sent successfully!")
           })
           .catch((err) => {
-              // toast error
-              // reset values
+            alert("Message send failed!")
+
           });
       };
 
 
     return (
+      
 <form onSubmit={handleSubmit}>
-          <label>
-            Name
-            <input
+  <FormLabel>
+  Name
+  </FormLabel>
+            <TextField
               type="text"
               required
-              placeholder="bram"
               onChange={e => setName(e.target.value)}
             />
-          </label>
-          <br />
-          <br />
-          <label>
-            Email
-            <input
+
+<FormLabel>
+  Email
+  </FormLabel>
+            <TextField
               type="text"
               required
-              placeholder="bram@bram.com"
               onChange={e => setEmail(e.target.value)}
             />
-          </label>
-          <br />
-          <br />
-          <label>
-            Message: (required)
-            <textarea
+<FormLabel>
+  Message
+  </FormLabel>    
+  <TextField
               type="text"
-              required
               placeholder="What's on your mind?"
+              required
               onChange={e => setMessage(e.target.value)}
-            />
-          </label>
-          <br />
-          <br />
+            />       
           <input type="submit" value="Submit" />
         </form>
     )
