@@ -24,7 +24,9 @@ const ContactMeForm : React.FC = () => {
             if (res.status !== 200) {
               alert("Message send failed!")
             }
-            alert("Message sent successfully!")
+            else {
+              alert("Message sent successfully!")
+            }
           })
           .catch((err) => {
             alert("Message send failed!")
