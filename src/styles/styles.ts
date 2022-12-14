@@ -11,6 +11,11 @@ const BodyContainer = styled.div`
   flex:1;
 `
 
+const RoundedBorderContainer = styled.div`
+border-radius: 25px;
+border: 2px solid #73AD21;
+`
+
 const H1 = styled.h1`
   font-size: clamp(1.5em, 9.5vw, 6.5em);
   letter-spacing: 0.04em;
@@ -39,6 +44,6 @@ const P = styled.p`
   line-height: 1.4em;
 `;
 
-export { PageContainer, BodyContainer, H1, H2, H3, H4, P };
+export { PageContainer, BodyContainer, RoundedBorderContainer, H1, H2, H3, H4, P };
 
 
