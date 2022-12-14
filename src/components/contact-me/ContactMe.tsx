@@ -3,11 +3,13 @@ import ContactMeForm from "./ContactMeForm";
 import { GitHub, Linkedin  } from "react-feather";
 import { H3 } from "../../styles/styles";
 import ContactMeLink from "./ContactMeLink";
+import { Grid } from "@mui/material";
  
 const ContactMe : React.FC = () => {
     return (
-        <div>
-            <div>
+        <Grid container spacing={2}>
+  <Grid item xs={4}>
+    <div>
             <ContactMeLink
             brand="github"
             link="https://github.com/Dhivas-Sugumar"
@@ -19,9 +21,11 @@ const ContactMe : React.FC = () => {
             icon={<Linkedin/>}
             />
             </div>
-
-            <ContactMeForm/>
-        </div>
+  </Grid>
+  <Grid item xs={8}>
+    <ContactMeForm/>
+  </Grid>
+</Grid>
     )
 }
 
