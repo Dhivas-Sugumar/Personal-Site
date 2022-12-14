@@ -5,12 +5,12 @@ import { ContactMeLinkProps } from "../../../lib/types";
 const ContactMeLink : React.FC<ContactMeLinkProps> = ( {brand, link , icon} ) => {
     return (
         <div>
-            {brand}
             <Link
                 href={link}
                 target="_blank"
 
             >
+                {brand}
                 {icon}
             </Link>
         </div>
