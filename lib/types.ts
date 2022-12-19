@@ -12,8 +12,7 @@ export type EducationItemProps = {
     level: string
     dates: string
     degrees: string
-    grade: string
     acheivements: string
-    activities: string
+    activities?: string
 }
 
