@@ -1,3 +1,4 @@
+import AboutMe from '../components/about-me/AboutMe'
 import ContactMe from '../components/contact-me/ContactMe'
 import Footer from '../components/footer/Footer'
 import Header from '../components/header/Header'
@@ -9,6 +10,7 @@ const IndexPage = () => (
   <Header />
   <BodyContainer>
     <Headline/>
+    <AboutMe/>
     <ContactMe/>
   </BodyContainer>
   <Footer />

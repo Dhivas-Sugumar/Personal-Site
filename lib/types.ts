@@ -6,3 +6,14 @@ export type ContactMeLinkProps = {
     icon: IconProps
 }
 
+export type EducationItemProps = {
+    name: string
+    location: string
+    level: string
+    dates: string
+    degrees: string
+    grade: string
+    acheivements: string
+    activities: string
+}
+
