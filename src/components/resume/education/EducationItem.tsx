@@ -5,7 +5,7 @@ import { H4, P } from "../../../styles/styles";
 
 const EducationItem: React.FC<EducationItemProps> = (
     {
-        name,
+        school,
         location,
         level,
         dates,
@@ -19,7 +19,7 @@ const EducationItem: React.FC<EducationItemProps> = (
             <Grid item xs={10}>
                 <Grid item xs={12}>
                     <H4>
-                        {name} {location}
+                        {school} | {location}
                     </H4>
                 </Grid>
                 <Grid item xs={12}>

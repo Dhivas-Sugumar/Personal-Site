@@ -7,7 +7,7 @@ const Education : React.FC = () => {
         <>
         <H2>Education</H2>
         <EducationItem
-            name={"Northeastern University"}
+            school={"Northeastern University"}
             location={"Boston,MA"}
             level={"Undergraduate Degree"}
             dates={"Sept 2020 - Present"}
@@ -16,7 +16,7 @@ const Education : React.FC = () => {
             activities={"Hackbeanpot, Code for Community, NU Toastmasters, NU Circle K"} 
         />
         <EducationItem
-                name={"Asian International School"}
+                school={"Asian International School"}
                 location={"Colombo,Sri Lanka"}
                 level={"High School Diploma"}
                 dates={"Sept 2003 - June 2020"}

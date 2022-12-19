@@ -7,12 +7,20 @@ export type ContactMeLinkProps = {
 }
 
 export type EducationItemProps = {
-    name: string
+    school: string
     location: string
     level: string
     dates: string
     degrees: string
     acheivements: string
     activities?: string
+}
+
+export type ExperienceItemProps = {
+    company: string
+    location: string
+    title: string
+    dates: string
+    description: Array<String>
 }
 
