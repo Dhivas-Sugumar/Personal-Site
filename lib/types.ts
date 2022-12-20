@@ -24,3 +24,7 @@ export type ExperienceItemProps = {
     description: Array<String>
 }
 
+export type SkillsItemProps = {
+    type: string 
+    skills: Array<String>
+}
