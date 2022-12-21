@@ -1,3 +1,4 @@
+import { ReactElement } from "react"
 import { IconProps } from "react-feather"
 
 export type ContactMeLinkProps = {
@@ -27,4 +28,12 @@ export type ExperienceItemProps = {
 export type SkillsItemProps = {
     type: string 
     skills: Array<String>
+}
+
+export type ProjectItemProps = {
+    title: string 
+    image: ReactElement
+    date: string
+    description: string
+    technologies: Array<ReactElement>
 }
