@@ -1,9 +1,11 @@
 import React from "react"
+import { H1 } from "../../styles/styles"
 import ProjectItem from "./ProjectItem"
 
 const Projects : React.FC = () => {
     return (
         <>
+        <H1>Projects</H1>
             <ProjectItem 
                 title={"Minerva"} 
                 image={undefined} 
