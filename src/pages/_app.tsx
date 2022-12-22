@@ -27,6 +27,7 @@ function MyApp({ Component, pageProps }: AppProps) {
 
 
   return (
+
     <ColorContext.Provider value={colorMode}>
       <ThemeProvider theme={theme}>
         <CssBaseline enableColorScheme />
