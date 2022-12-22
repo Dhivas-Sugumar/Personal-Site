@@ -2,6 +2,7 @@ import React from 'react'
 import { AppProps } from 'next/app'
 import { createTheme, CssBaseline, IconButton, PaletteMode, ThemeProvider } from '@mui/material'
 import '../styles/index.css'
+import "../styles/global.css";
 import { lightTheme, darkTheme } from '../themes/theme';
 import { ColorContext } from "../utils/ColorContext";
 import { SwitchModeButton } from '../components/buttons/switch-mode/SwitchModeButton';

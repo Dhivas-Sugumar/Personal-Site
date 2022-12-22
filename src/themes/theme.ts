@@ -8,6 +8,9 @@ const baseTheme = createTheme({
 })
 
 const darkTheme = createTheme({
+  typography: {
+    fontFamily: "SourceCode, 'Nunito Sans' sans-serif",
+  },
   palette: {
     mode: "dark",
     primary: {
@@ -26,6 +29,9 @@ const darkTheme = createTheme({
   }
 })
 const lightTheme = createTheme({
+  typography: {
+    fontFamily: "SourceCode, sans-serif",
+  },
   palette: {
     mode: "light",
     primary: {
