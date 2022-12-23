@@ -7,7 +7,7 @@ import { Grid } from "@mui/material";
  
 const ContactMe : React.FC = () => {
     return (
-        <Grid container spacing={2}>
+        <Grid container spacing={2} id="contact">
   <Grid item xs={4}>
     <div>
             <ContactMeLink

@@ -4,7 +4,7 @@ import { H1 } from "../../styles/styles";
 
 const Headline : React.FC = () => {
     return (
-        <div>
+        <div id="intro">
             <H1>
                 SOFTWARE ENGINEER
             </H1>

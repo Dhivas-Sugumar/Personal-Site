@@ -4,7 +4,7 @@ import ProjectItem from "./ProjectItem"
 
 const Projects : React.FC = () => {
     return (
-        <>
+        <div id="projects">
         <H1>Projects</H1>
             <ProjectItem 
                 title={"Minerva"} 
@@ -16,7 +16,7 @@ const Projects : React.FC = () => {
                 Implemented user validation model, as well as database level validations for forms.
                 Deployed site using Heroku and Google Cloud storage`} 
                 technologies={[undefined]}/>
-        </>
+        </div>
     )
 }
 

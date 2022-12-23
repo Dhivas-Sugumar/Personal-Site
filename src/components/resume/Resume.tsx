@@ -6,12 +6,12 @@ import Skills from "./skills/Skills";
 
 const Resume : React.FC = () => {
     return (
-        <>
+        <div id="resume">
         <H1>Resume</H1>
         <Education />
         <Experience/>
         <Skills/>
-        </>
+        </div>
     )
 }
 
