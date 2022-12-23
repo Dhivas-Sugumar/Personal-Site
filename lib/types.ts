@@ -37,3 +37,7 @@ export type ProjectItemProps = {
     description: string
     technologies: Array<ReactElement>
 }
+
+export type TextLoopProps = {
+    texts: Array<String>
+}
