@@ -1,12 +1,12 @@
 import React from "react";
-import { H1 } from "../../styles/styles";
 import TextLoop from "../animation-components/TextLoop/TextLoop";
+import { HeadlineText } from "./Headline.styles";
 
 
 const Headline : React.FC = () => {
     return (
         <div id="intro">
-            <H1>
+            <HeadlineText>
                 <TextLoop texts={
                     ["SOFTWARE DEVELOPER",
                      "STUDENT",
@@ -20,7 +20,7 @@ const Headline : React.FC = () => {
                     ]
                     } 
                 />
-            </H1>
+            </HeadlineText>
         </div>
     )
 }
