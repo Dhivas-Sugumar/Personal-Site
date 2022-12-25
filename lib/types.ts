@@ -34,7 +34,7 @@ export type ResumeItemDateProps = {
 export type SkillsItemProps = {
     name: string 
     logo: ReactElement
-    proficiency: number
+    proficiency?: number
 }
 
 export type ProjectItemProps = {
@@ -45,6 +45,14 @@ export type ProjectItemProps = {
     technologies: Array<ReactElement>
 }
 
+export interface ToolTipProps {
+    proficiency: string;
+  }
+
 export type TextLoopProps = {
     texts: Array<String>
+}
+
+export type HoverCircleProps = {
+    child: ReactElement
 }
