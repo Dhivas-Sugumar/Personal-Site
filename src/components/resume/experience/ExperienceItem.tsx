@@ -2,6 +2,7 @@ import { Grid } from "@mui/material";
 import React from "react";
 import { ExperienceItemProps } from "../../../../lib/types";
 import { H4, P } from "../../../styles/styles";
+import { ExperienceItemContainer } from "./ExperienceItem.styles";
 
 const ExperienceItem : React.FC<ExperienceItemProps> = (
     {
@@ -13,19 +14,22 @@ const ExperienceItem : React.FC<ExperienceItemProps> = (
     }
 ) => {
     return(
-        <Grid container spacing={2}>
+        <ExperienceItemContainer>
+<Grid container spacing={2}>
         <Grid item xs={10}>
             <Grid item xs={12}>
                 <H4>
-                    {company} | {location}
+                {title}
+
                 </H4>
             </Grid>
             <Grid item xs={12}>
                 <P>
-                    {title}
+                {company} | {location}
+
                 </P>
             </Grid>
-            <Grid item xs={12}>
+            <Grid item xs={12} className="mt-6">
                 <ul>
                     {description.map(
                         (item) => {
@@ -40,6 +44,8 @@ const ExperienceItem : React.FC<ExperienceItemProps> = (
         </Grid>
 
     </Grid>
+        </ExperienceItemContainer>
+        
     )
 }
 

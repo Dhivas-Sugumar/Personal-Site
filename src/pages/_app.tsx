@@ -1,6 +1,6 @@
 import React from 'react'
 import { AppProps } from 'next/app'
-import { createTheme, CssBaseline, IconButton, PaletteMode, ThemeProvider } from '@mui/material'
+import { createTheme, CssBaseline, PaletteMode, ThemeProvider } from '@mui/material'
 import '../styles/index.css'
 import "../styles/global.css";
 import { lightTheme, darkTheme } from '../themes/theme';
