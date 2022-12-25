@@ -1,6 +1,6 @@
 import React from "react";
 import ContactMeForm from "./ContactMeForm";
-import { GitHub, Linkedin  } from "react-feather";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { H3 } from "../../styles/styles";
 import ContactMeLink from "./ContactMeLink";
 import { Grid } from "@mui/material";
@@ -13,12 +13,12 @@ const ContactMe : React.FC = () => {
             <ContactMeLink
             brand="github"
             link="https://github.com/Dhivas-Sugumar"
-            icon={<GitHub/>}
+            icon={<FontAwesomeIcon icon={["fab", "github"]}/>}
             />
             <ContactMeLink
             brand="LinkedIn"
             link="https://github.com/Dhivas-Sugumar"
-            icon={<Linkedin/>}
+            icon={<FontAwesomeIcon icon={["fab", "linkedin"]}/>}
             />
             </div>
   </Grid>

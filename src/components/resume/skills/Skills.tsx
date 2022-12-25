@@ -1,6 +1,8 @@
 import React from "react"
-import { H2 } from "../../../styles/styles"
+import { H2, H4 } from "../../../styles/styles"
 import SkillsItem from "./SkillsItem"
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import {faJava} from "@fortawesome/free-brands-svg-icons"
 
 const Skills: React.FC = () => {
 
@@ -8,8 +10,8 @@ const Skills: React.FC = () => {
         <>
         <H2>Skills</H2>
         <H4>Programming Languages</H4>
-            <SkillsItem name={"Java"} logo={undefined} proficiency={0} />
-
+        <FontAwesomeIcon icon={faJava}/>
+                    <SkillsItem name={"Java"} logo={<FontAwesomeIcon icon={faJava} />} proficiency={8} />
         <H4>Software Tools</H4>
 
         <H4>Frameworks & Libraries</H4>

@@ -1,7 +1,8 @@
 import { Button, FormLabel, TextField } from "@mui/material";
 import React, { useState } from "react";
-import { Send } from "react-feather";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { RoundedBorderContainer } from "../../styles/styles";
+import { Send } from "react-feather";
 
 const ContactMeForm: React.FC = () => {
 
@@ -71,7 +72,7 @@ const ContactMeForm: React.FC = () => {
         />
       </div>
       <div>
-                <Button variant="contained" endIcon={<Send />}>
+                <Button variant="contained" endIcon={<Send/>}>
           Send
         </Button>  
       </div>

@@ -6,6 +6,7 @@ import Headline from '../components/headline/Headline'
 import Projects from '../components/projects/Projects'
 import Resume from '../components/resume/Resume'
 import { BodyContainer, PageContainer } from '../styles/styles'
+import '../../lib/fontawesome'
 
 const IndexPage = () => (
   <PageContainer>
