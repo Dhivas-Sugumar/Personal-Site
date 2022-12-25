@@ -21,8 +21,14 @@ export type ExperienceItemProps = {
     company: string
     location: string
     title: string
-    dates: string
+    startDate: string
+    endDate: string
     description: Array<String>
+}
+
+export type ResumeItemDateProps = {
+    start: string
+    end: string
 }
 
 export type SkillsItemProps = {
