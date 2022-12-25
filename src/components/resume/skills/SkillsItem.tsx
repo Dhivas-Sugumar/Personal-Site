@@ -4,17 +4,23 @@ import { H4 } from "../../../styles/styles"
 
 const SkillsItem: React.FC<SkillsItemProps> = (
     {
-        type, 
-        skills
+        name, 
+        logo, 
+        proficiency
     }
 ) => {
     return( 
-       <>
-       <H4>{type}</H4>
         <div>
-            {skills.map((skill) => { return `${skill} |` })}
+            {logo}
+            <p>{name}</p>
+            {proficiency}
         </div>
-        </>
+    //    <>
+    //    <H4>{type}</H4>
+    //     <div>
+    //         {skills.map((skill) => { return `${skill} |` })}
+    //     </div>
+    //     </>
     )
 }
 

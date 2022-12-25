@@ -7,7 +7,13 @@ const Skills: React.FC = () => {
     return (
         <>
         <H2>Skills</H2>
-        <SkillsItem 
+        <H4>Programming Languages</H4>
+            <SkillsItem name={"Java"} logo={undefined} proficiency={0} />
+
+        <H4>Software Tools</H4>
+
+        <H4>Frameworks & Libraries</H4>
+        {/* <SkillsItem 
             type={"Programming Languages"} 
             skills={["Java","Python","Ruby","HTML","CSS","JavaScript", "TypeScript",
             "SQL(familiar)" ,"R(familiar)", "C++(familiar)"
@@ -25,7 +31,7 @@ const Skills: React.FC = () => {
             skills={["React", "NextJS", "NestJS", "Bootstrap", "Material UI", 
             "Framer Motion","Ruby on Rails", "pandas", "pillow", "scikit learn"
             ]} 
-        />
+        /> */}
         </>
         
     )

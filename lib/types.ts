@@ -33,8 +33,9 @@ export type ResumeItemDateProps = {
 }
 
 export type SkillsItemProps = {
-    type: string 
-    skills: Array<String>
+    name: string 
+    logo: ReactElement
+    proficiency: number
 }
 
 export type ProjectItemProps = {

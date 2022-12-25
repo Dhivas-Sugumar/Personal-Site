@@ -1,10 +1,8 @@
 import { Grid } from "@mui/material";
 import React from "react";
 import { ExperienceItemProps } from "../../../../lib/types";
-import { DateContainer, H4, P } from "../../../styles/styles";
 import { ResumeItemContainer, ResumeItemLocation, ResumeItemTitle } from "../ResumeItem.styles";
 import ResumeItemDate from "../ResumeItemDate";
-import { ExperienceItemContainer, ExperienceItemLocation, ExperienceItemTitle } from "./ExperienceItem.styles";
 
 const ExperienceItem : React.FC<ExperienceItemProps> = (
     {
