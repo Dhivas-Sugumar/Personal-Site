@@ -11,7 +11,8 @@ export type EducationItemProps = {
     school: string
     location: string
     level: string
-    dates: string
+    startDate: string
+    endDate: string
     degrees: string
     acheivements: string
     activities?: string

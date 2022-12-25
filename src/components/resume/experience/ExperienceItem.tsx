@@ -2,6 +2,7 @@ import { Grid } from "@mui/material";
 import React from "react";
 import { ExperienceItemProps } from "../../../../lib/types";
 import { DateContainer, H4, P } from "../../../styles/styles";
+import { ResumeItemContainer, ResumeItemLocation, ResumeItemTitle } from "../ResumeItem.styles";
 import ResumeItemDate from "../ResumeItemDate";
 import { ExperienceItemContainer, ExperienceItemLocation, ExperienceItemTitle } from "./ExperienceItem.styles";
 
@@ -16,20 +17,20 @@ const ExperienceItem : React.FC<ExperienceItemProps> = (
     }
 ) => {
     return(
-        <ExperienceItemContainer>
+        <ResumeItemContainer>
 <Grid container spacing={2}>
         <Grid item xs={10}>
             <Grid item xs={12}>
-                <ExperienceItemTitle>
+                <ResumeItemTitle>
                 {title}
 
-                </ExperienceItemTitle>
+                </ResumeItemTitle>
             </Grid>
             <Grid item xs={12}>
-                <ExperienceItemLocation>
+                <ResumeItemLocation>
                 {company} | {location}
 
-                </ExperienceItemLocation>
+                </ResumeItemLocation>
             </Grid>
             <Grid item xs={12} className="mt-6">
                 <ul>
@@ -46,7 +47,7 @@ const ExperienceItem : React.FC<ExperienceItemProps> = (
         </Grid>
 
     </Grid>
-        </ExperienceItemContainer>
+        </ResumeItemContainer>
         
     )
 }
