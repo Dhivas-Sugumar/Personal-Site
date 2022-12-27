@@ -1,21 +1,36 @@
-import { Tooltip } from "@mui/material"
-import React from "react"
+import { styled, Tooltip, tooltipClasses, TooltipProps } from "@mui/material"
+import zIndex from "@mui/material/styles/zIndex"
+import React, { createRef, forwardRef, Ref } from "react"
 import { SkillsItemProps } from "../../../../lib/types"
 import { H4 } from "../../../styles/styles"
 import HoverCircle from "../../animation-components/HoverCircle/HoverCircle"
 
-const SkillsItemContent: React.FC<SkillsItemProps> = (
-    {
-    name,
-    logo,
-    })=> {
+
+const SkillsItemTooltip = styled(({ className, ...props }: TooltipProps) => (
+    <Tooltip {...props} classes={{ popper: className }} />
+  ))(({ theme }) => ({
+    [`& .${tooltipClasses.tooltip}`]: {
+        width: '12em',
+        backgroundColor: theme.palette.secondary.main,
+        color: theme.palette.primary.main,
+        textAlign: 'center',
+        borderRadius: '1.2em',
+        padding: '1em 1em',
+        position: 'absolute',
+        zIndex: 1,
+        marginTop: '-20em',
+    },
+  }));
+
+
+const SkillsItemContent = forwardRef((props: SkillsItemProps, ref : Ref<HTMLInputElement>) => {
     return(  
-              
-    <div>
-        {logo}
-        <p>{name}</p>
+       
+    <div ref={ref} {...props}>
+        {props.logo}
+        <p>{props.name}</p>
     </div>)
-}
+})
 
 
 const SkillsItem: React.FC<SkillsItemProps> = (
@@ -26,11 +41,10 @@ const SkillsItem: React.FC<SkillsItemProps> = (
     }
 ) => {
     return( 
-        <Tooltip title={`${proficiency}`}>
-            <div>
+        <SkillsItemTooltip title={`proficiency: ${proficiency}/10`} >
             <SkillsItemContent name={name} logo={logo} />
-            </div>
-        </Tooltip>
+
+        </SkillsItemTooltip>
 
     )
 }

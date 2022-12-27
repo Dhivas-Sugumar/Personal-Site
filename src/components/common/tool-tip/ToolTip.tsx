@@ -1,18 +1,14 @@
 import React from 'react';
-import { ToolTipProps } from '../../../lib/types';
-import { StyledToolTip, StyledToolTipText } from './ToolTip.styles';
+import { ToolTipProps } from '../../../../lib/types'
+import { P } from '../../../styles/styles';
+import { StyledToolTip } from './ToolTip.styles';
 
 const ToolTip: React.FC<ToolTipProps> = ({ proficiency}) => {
   return (
-    <StyledToolTip team={team}>
-      <StyledToolTipText>
-        {toolTipInfo.name}
-        <div>{toolTipInfo.year}</div>
-        <div>{toolTipInfo.major}</div>
-        <div>{toolTipInfo.pronouns}</div>
-      </StyledToolTipText>
+    <StyledToolTip>
+      <P>{proficiency}</P>
     </StyledToolTip>
-  );
-};
+  )
+}
 
 export default ToolTip;

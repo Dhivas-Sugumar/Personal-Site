@@ -12,10 +12,7 @@ const Skills: React.FC = () => {
         <H2>Skills</H2>
         <H4>Programming Languages</H4>
         <Grid container spacing={2}>
-            <Grid item xs={6}>
-                test
-            </Grid>
-            <Grid item xs={6}>
+            <Grid item xs={12}>
             <SkillsItem name={"Java"} logo={<FontAwesomeIcon icon={["fab","java"]} size="3x" />} proficiency={8} />
             </Grid>
 
