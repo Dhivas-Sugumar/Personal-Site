@@ -1,9 +1,8 @@
 import { styled, Tooltip, tooltipClasses, TooltipProps } from "@mui/material"
-import zIndex from "@mui/material/styles/zIndex"
-import React, { createRef, forwardRef, Ref } from "react"
+import React, {  forwardRef, Ref } from "react"
 import { SkillsItemProps } from "../../../../lib/types"
-import { H4 } from "../../../styles/styles"
 import HoverCircle from "../../animation-components/HoverCircle/HoverCircle"
+import { SkillsItemStyled } from "./SkillsItem.styles";
 
 
 const SkillsItemTooltip = styled(({ className, ...props }: TooltipProps) => (
@@ -26,10 +25,10 @@ const SkillsItemTooltip = styled(({ className, ...props }: TooltipProps) => (
 const SkillsItemContent = forwardRef((props: SkillsItemProps, ref : Ref<HTMLInputElement>) => {
     return(  
        
-    <div ref={ref} {...props}>
+    <SkillsItemStyled ref={ref} {...props}>
         {props.logo}
         <p>{props.name}</p>
-    </div>)
+    </SkillsItemStyled>)
 })
 
 
