@@ -25,6 +25,7 @@ import typescript from '../../../assets/SkillLogos/typescript.svg'
 import code from '../../../assets/SkillLogos/visual-studio.svg'
 import scikit from '../../../assets/SkillLogos/scikit-learn.svg'
 import vercel from '../../../assets/SkillLogos/vercel.svg'
+import { StyledSkillsHeading, StyledSkillsRow } from "./Skills.styles"
 
 const IMAGE_WIDTH = 46
 const IMAGE_HEIGHT = 48
@@ -32,7 +33,14 @@ const IMAGE_HEIGHT = 48
 const Skills: React.FC = () => {
 
     return (
-        <><H2>Skills</H2><H4>Programming Languages</H4><Grid container spacing={2}>
+        <>
+        <H2>Skills</H2>
+
+            <StyledSkillsHeading>
+            <H4>Programming Languages</H4>
+            </StyledSkillsHeading>
+            <StyledSkillsRow>
+        <Grid container spacing={2}>
             <Grid item xs={12}>
                 <SkillsItem name={"Java"} logo={<FontAwesomeIcon icon={["fab", "java"]} size="3x" />} proficiency={8}/>
                 <SkillsItem name={"Python"} logo={<FontAwesomeIcon icon={["fab", "python"]} size="3x" />} proficiency={9} />
@@ -46,7 +54,13 @@ const Skills: React.FC = () => {
                 <SkillsItem name={"C++"} logo={<Image src={c} alt="c++" width={IMAGE_WIDTH} height={IMAGE_HEIGHT} />} proficiency={4} />
             </Grid>
 
-        </Grid><H4>Software Tools</H4><Grid container spacing={2}>
+        </Grid>
+        </StyledSkillsRow>
+        <StyledSkillsHeading>
+        <H4>Software Tools</H4>
+        </StyledSkillsHeading>
+        <StyledSkillsRow>
+        <Grid container spacing={2}>
                 <Grid item xs={12}>
                     <SkillsItem name={"Ruby Mine"} logo={<Image src={rubymine} alt="ruby logo" width={IMAGE_WIDTH} height={IMAGE_HEIGHT}/>} proficiency={8} />
                     <SkillsItem name={"Visual Studio Code"} logo={<Image src={code} alt="visual studio code" width={IMAGE_WIDTH} height={IMAGE_HEIGHT}/>} proficiency={8} />
@@ -63,7 +77,13 @@ const Skills: React.FC = () => {
 
                 </Grid>
 
-            </Grid><H4>Frameworks & Libraries</H4><Grid container spacing={2}>
+            </Grid>
+        </StyledSkillsRow>
+        <StyledSkillsHeading>
+        <H4>Frameworks & Libraries</H4>
+        </StyledSkillsHeading>
+        <StyledSkillsRow>
+        <Grid container spacing={2}>
                 <Grid item xs={12}>
                     <SkillsItem name={"React"} logo={<FontAwesomeIcon icon={["fab", "react"]} size="3x" />} proficiency={8} />
                     <SkillsItem name={"NextJS"} logo={<Image src={next} alt="nextJS" width={IMAGE_WIDTH} height={IMAGE_HEIGHT} />} proficiency={8} />
@@ -78,7 +98,9 @@ const Skills: React.FC = () => {
 
                 </Grid>
 
-            </Grid></>
+            </Grid>
+        </StyledSkillsRow>
+</>
         
     )
 }
