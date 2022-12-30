@@ -9,7 +9,7 @@ const ContactMe : React.FC = () => {
     return (
         <Grid container spacing={2} id="contact">
           <Grid item xs={12}>
-          <H1>Contact Me!</H1>
+          <H1>Contact Me</H1>
 
           </Grid>
   <Grid item xs={4}>
@@ -21,7 +21,7 @@ const ContactMe : React.FC = () => {
             />
             <ContactMeLink
             brand="LinkedIn"
-            link="https://github.com/Dhivas-Sugumar"
+            link="https://www.linkedin.com/in/dhivas-sugumar/"
             icon={<FontAwesomeIcon icon={["fab", "linkedin"]} size={"3x"}/>}
             />
             </div>

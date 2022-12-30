@@ -1,8 +1,8 @@
 import { Button, FormLabel, TextField } from "@mui/material";
 import React, { useState } from "react";
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { RoundedBorderContainer } from "../../styles/styles";
 import { Send } from "react-feather";
+import { H3, H4 } from "../../styles/styles";
+import { StyledContactMeForm, StyledContactMeFormInput, StyledContactMeFormInputContainer, StyledContactMeFormMessageField, StyledContactMeFormMessageInput } from "./ContactMe.styles";
 
 const ContactMeForm: React.FC = () => {
 
@@ -39,46 +39,58 @@ const ContactMeForm: React.FC = () => {
 
 
   return (
-    <RoundedBorderContainer>
-      <form onSubmit={handleSubmit}>
+    <StyledContactMeForm>
       <div>
-        <FormLabel>
-          Name
-        </FormLabel>
+        <H3>Reach Out!</H3>
+      </div>
+            <form onSubmit={handleSubmit}>
+        <StyledContactMeFormInputContainer>
+          <StyledContactMeFormInput>
+            <H4>
+            Name
+            </H4>
+
         <TextField
           type="text"
           required
           onChange={e => setName(e.target.value)}
         />
+          </StyledContactMeFormInput>
 
-        <FormLabel>
-          Email
-        </FormLabel>
+          <StyledContactMeFormInput>
+
+          <H4>
+            Email
+            </H4>
         <TextField
           type="text"
           required
           onChange={e => setEmail(e.target.value)}
         />
-      </div>
-      <div>
-        <FormLabel>
-          Message
-        </FormLabel>
-        <TextField
+                  </StyledContactMeFormInput>
+
+        </StyledContactMeFormInputContainer>
+    <StyledContactMeFormMessageInput>
+    <H4>
+            {`What's on your mind?`}
+            </H4>
+        <StyledContactMeFormMessageField
           type="text"
-          placeholder="What's on your mind?"
+          multiline
+          minRows={8}
           required
           onChange={e => setMessage(e.target.value)}
         />
-      </div>
+    </StyledContactMeFormMessageInput>
+      
       <div>
                 <Button variant="contained" endIcon={<Send/>}>
           Send
         </Button>  
       </div>
-    </form>
-    </RoundedBorderContainer>
-    
+    </form>  
+    </StyledContactMeForm>
+  
   )
 }
 

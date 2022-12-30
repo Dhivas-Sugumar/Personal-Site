@@ -6,7 +6,7 @@ const StyledContactMeLinkContainer = styled(motion.div)`
 display: flex;
 flex-direction: row;
 width: 50%;
-margin: 0.5em 0;
+margin: 2em 0;
 padding: 0.5em 0;
 border-radius: 2em;
 border: 0.2em black;
