@@ -40,8 +40,9 @@ export type SkillsItemProps = {
 export type ProjectItemProps = {
     title: string 
     image: ReactElement
-    date: string
-    description: string
+    startDate: string
+    endDate: string
+    description: Array<String>
     technologies: Array<ReactElement>
 }
 
