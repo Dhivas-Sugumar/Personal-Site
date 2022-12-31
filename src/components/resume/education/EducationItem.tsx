@@ -2,7 +2,7 @@ import { Grid } from "@mui/material";
 import React from "react";
 import { EducationItemProps } from "../../../../lib/types";
 import { H4, P } from "../../../styles/styles";
-import { ResumeItemContainer, ResumeItemLocation, ResumeItemTitle } from "../ResumeItem.styles";
+import { ResumeItemContainer, ResumeItemDivider, ResumeItemLocation, ResumeItemTitle } from "../ResumeItem.styles";
 import ResumeItemDate from "../ResumeItemDate";
 
 const EducationItem: React.FC<EducationItemProps> = (
@@ -53,6 +53,7 @@ const EducationItem: React.FC<EducationItemProps> = (
             </Grid>
 
         </Grid>
+        <ResumeItemDivider/>
         </ResumeItemContainer>
 
     )

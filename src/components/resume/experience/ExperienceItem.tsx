@@ -1,7 +1,7 @@
-import { Grid } from "@mui/material";
+import { Divider, Grid } from "@mui/material";
 import React from "react";
 import { ExperienceItemProps } from "../../../../lib/types";
-import { ResumeItemContainer, ResumeItemLocation, ResumeItemTitle } from "../ResumeItem.styles";
+import { ResumeItemContainer, ResumeItemDivider, ResumeItemLocation, ResumeItemTitle } from "../ResumeItem.styles";
 import ResumeItemDate from "../ResumeItemDate";
 
 const ExperienceItem : React.FC<ExperienceItemProps> = (
@@ -33,8 +33,8 @@ const ExperienceItem : React.FC<ExperienceItemProps> = (
             <Grid item xs={12} className="mt-6">
                 <ul>
                     {description.map(
-                        (item) => {
-                            return <li>{item}</li>
+                        (item, index) => {
+                            return <li key={index}>{item}</li>
                         }
                     )}
                 </ul>
@@ -45,6 +45,7 @@ const ExperienceItem : React.FC<ExperienceItemProps> = (
         </Grid>
 
     </Grid>
+    <ResumeItemDivider/>
         </ResumeItemContainer>
         
     )
