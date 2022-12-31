@@ -5,11 +5,23 @@ import SideNav from "../sidenav/SideNav";
  
 const Header : React.FC = () => {
     return (
-        <header>
+        <header className="mt-9">
             <div className="flex flex-row">
-            <H3 className="basis-4/12">DHIVAS SUGUMAR</H3>
-            <H3 className="basis-8/12">
-                <TextLoop texts={["SOFTWARE DEVELOPER", "STUDENT", "DESIGNER"]} />
+            <H3 className="basis-5/12">DHIVAS SUGUMAR</H3>
+            <H3 className="basis-7/12">
+            <TextLoop texts={
+                    ["SOFTWARE DEVELOPER",
+                     "STUDENT",
+                     "DESIGNER",
+                     "READER",
+                     "SPACE ENTHUSIAST",
+                     "AURORA CHASER",
+                     "TRAVELLER",
+                     "PLANT DAD", 
+                     "PHILOSOPHY ENTHUSIAST" 
+                    ]
+                    } 
+                />
             </H3>
             <SideNav/>
             </div>

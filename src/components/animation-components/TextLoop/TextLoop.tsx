@@ -14,27 +14,28 @@ const TextLoop : React.FC<TextLoopProps> = ( {texts} ) => {
 
 
     const loopVariants = {
-        enter: {
-          translateY: 20,
-          opacity: 0,
-          height: 0
-        },
-        center: {
-          zIndex: 1,
-          translateY: 0,
-          opacity: 1,
-          height: "auto"
-        },
-        exit: {
+      enter: direction => {
+        return {
+          y: -20,
+          opacity: 0
+        };
+      },
+      center: {
+        zIndex: 1,
+        y: 0,
+        opacity: 1
+      },
+      exit: direction => {
+        return {
           zIndex: 0,
-          translateY: -20,
-          opacity: 0,
-          height: 0
-        },
+          opacity: 0
+        };
+      }
       }
     return(
-<AnimatePresence initial={false}>
+<AnimatePresence >
         <motion.span
+                  style={{ position: "absolute", textAlign: "center" }}
           key={index}
           layout
           variants={loopVariants}
@@ -42,8 +43,8 @@ const TextLoop : React.FC<TextLoopProps> = ( {texts} ) => {
           animate="center"
           exit="exit"
           transition={{
-            translateY: { type: "tween", ease: 'easeInOut'},
-            opacity: { duration: 0.25 }
+            y: { type: "spring", stiffness: 300, damping: 200 },
+            opacity: { duration: 0.5 }
           }}
         >
           {texts[index]}

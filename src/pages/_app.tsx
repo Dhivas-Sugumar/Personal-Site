@@ -32,7 +32,7 @@ function MyApp({ Component, pageProps }: AppProps) {
     <ColorContext.Provider value={colorMode}>
       <ThemeProvider theme={theme}>
         <CssBaseline enableColorScheme />
-        <SwitchModeButton/>
+        {/* <SwitchModeButton/> */}
         <Component {...pageProps}/>
       </ThemeProvider>
       </ColorContext.Provider>

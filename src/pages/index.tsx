@@ -10,9 +10,9 @@ import '../../lib/fontawesome'
 
 const IndexPage = () => (
   <PageContainer>
-  {/* <Header /> */}
+  <Header />
   <BodyContainer>
-    {/* <Headline/> */}
+    <Headline/>
     <AboutMe/>
     <Resume/>
     <Projects/>
