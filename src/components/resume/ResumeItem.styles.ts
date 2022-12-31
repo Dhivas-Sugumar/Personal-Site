@@ -3,7 +3,7 @@ import { Divider } from "@mui/material";
 import { H4, P } from "../../styles/styles";
 
 const ResumeItemContainer = styled.div`
-    padding: 5em 4em;
+    padding: 2em 4em;
 `
 
 const ResumeItemTitle= styled(H4)`
