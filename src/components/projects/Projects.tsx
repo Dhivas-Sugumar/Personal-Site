@@ -3,7 +3,7 @@ import React from "react"
 import { H1 } from "../../styles/styles"
 import ProjectItem from "./ProjectItem"
 import minerva from '../../assets/minerva-screenshot.jpeg'
-import rubymine from '../../assets/SkillLogos/rubymine.svg'
+import rubymine from '../../assets/SkillLogos/jetbrains.svg'
 import rubyRails from '../../assets/SkillLogos/ruby-on-rails.svg'
 import heroku from '../../assets/SkillLogos/heroku.svg'
 import ruby from '../../assets/SkillLogos/ruby.svg'

@@ -1,7 +1,7 @@
 import styled from "@emotion/styled";
 
 const StyledSkillsRow = styled.div`
-    display: flex;
+    display: block;
     justify-content: center;
 `
 

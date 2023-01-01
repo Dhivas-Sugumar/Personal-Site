@@ -2,7 +2,7 @@ import { styled, Tooltip, tooltipClasses, TooltipProps } from "@mui/material"
 import React, {  forwardRef, Ref } from "react"
 import { SkillsItemProps } from "../../../../lib/types"
 import HoverCircle from "../../animation-components/HoverCircle/HoverCircle"
-import { SkillsItemStyled } from "./SkillsItem.styles";
+import { SkillsItemStyled, StyledSkillsItemContainer } from "./SkillsItem.styles";
 
 
 const SkillsItemTooltip = styled(({ className, ...props }: TooltipProps) => (
@@ -40,10 +40,13 @@ const SkillsItem: React.FC<SkillsItemProps> = (
     }
 ) => {
     return( 
+        <StyledSkillsItemContainer>
         <SkillsItemTooltip title={`proficiency: ${proficiency}/10`} >
             <SkillsItemContent name={name} logo={logo} />
 
         </SkillsItemTooltip>
+        </StyledSkillsItemContainer>
+
 
     )
 }

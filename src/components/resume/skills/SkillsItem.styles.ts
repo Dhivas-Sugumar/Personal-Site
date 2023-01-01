@@ -1,15 +1,21 @@
 import styled from "@emotion/styled";
 import {useTheme } from "@mui/material";
 
+const StyledSkillsItemContainer = styled.div`
+  display: inline-block;
+`
+
+
 const SkillsItemStyled = styled.div`
   position: relative;
   text-align: center;
-  display: inline-block;
-  width: 100px;
+  display: flex;
+  justify-content: center;
+  align-items:center;
+  width: 110px;
   height: 100px;
-  background-color: #fff;
   margin: 0 0.75em 0 0.75em;
-  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   border-radius: 5px;
   -webkit-transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
   transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
@@ -40,4 +46,4 @@ const SkillsItemStyled = styled.div`
 
 `
 
-export {SkillsItemStyled}
+export {SkillsItemStyled, StyledSkillsItemContainer}

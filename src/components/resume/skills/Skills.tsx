@@ -20,11 +20,13 @@ import pycharm from '../../../assets/SkillLogos/pycharm.svg'
 import r from '../../../assets/SkillLogos/r.svg'
 import rubyRails from '../../../assets/SkillLogos/ruby-on-rails.svg'
 import ruby from '../../../assets/SkillLogos/ruby.svg'
-import rubymine from '../../../assets/SkillLogos/rubymine.svg'
+import rubymine from '../../../assets/SkillLogos/jetbrains.svg'
 import typescript from '../../../assets/SkillLogos/typescript.svg'
 import code from '../../../assets/SkillLogos/visual-studio.svg'
 import scikit from '../../../assets/SkillLogos/scikit-learn.svg'
 import vercel from '../../../assets/SkillLogos/vercel.svg'
+import framerMotion from '../../../assets/SkillLogos/framer-motion.svg'
+import postgreSQL from '../../../assets/SkillLogos/postgresql.svg'
 import { StyledSkillsHeading, StyledSkillsRow } from "./Skills.styles"
 
 const IMAGE_WIDTH = 46
@@ -49,7 +51,7 @@ const Skills: React.FC = () => {
                 <SkillsItem name={"CSS"} logo={<FontAwesomeIcon icon={["fab", "css3"]} size="3x" />} proficiency={6} />
                 <SkillsItem name={"JavaScript"} logo={<FontAwesomeIcon icon={["fab", "js-square"]} size="3x" />} proficiency={8} />
                 <SkillsItem name={"Typescript"} logo={<Image src={typescript} alt="typescript"  width={IMAGE_WIDTH} height={IMAGE_HEIGHT}/>} proficiency={8} />
-                <SkillsItem name={"SQL"} logo={<Image src={undefined} alt="SQL"  width={IMAGE_WIDTH} height={IMAGE_HEIGHT}/>} proficiency={5} />
+                <SkillsItem name={"SQL"} logo={<Image src={postgreSQL} alt="SQL"  width={IMAGE_WIDTH} height={IMAGE_HEIGHT}/>} proficiency={5} />
                 <SkillsItem name={"R"} logo={<Image src={r} alt="R" width={IMAGE_WIDTH} height={IMAGE_HEIGHT}/>} proficiency={3} />
                 <SkillsItem name={"C++"} logo={<Image src={c} alt="c++" width={IMAGE_WIDTH} height={IMAGE_HEIGHT} />} proficiency={4} />
             </Grid>
@@ -90,7 +92,7 @@ const Skills: React.FC = () => {
                     <SkillsItem name={"NestJS"} logo={<Image src={nest} alt="nestJS" width={IMAGE_WIDTH} height={IMAGE_HEIGHT} />} proficiency={8} />
                     <SkillsItem name={"Bootstrap"} logo={<FontAwesomeIcon icon={["fab", "bootstrap"]} size="3x" />} proficiency={8} />
                     <SkillsItem name={"Material UI"} logo={<Image src={materialUi} alt="material ui"  width={IMAGE_WIDTH} height={IMAGE_HEIGHT}/>} proficiency={8} />
-                    <SkillsItem name={"Framer Motion"} logo={<Image src={undefined} alt="framer motion" width={IMAGE_WIDTH} height={IMAGE_HEIGHT} />} proficiency={8} />
+                    <SkillsItem name={"Framer Motion"} logo={<Image src={framerMotion} alt="framer motion" width={IMAGE_WIDTH} height={IMAGE_HEIGHT} />} proficiency={8} />
                     <SkillsItem name={"Ruby on Rails"} logo={<Image src={rubyRails} alt="ruby on rails"  width={IMAGE_WIDTH} height={IMAGE_HEIGHT}/>} proficiency={8} />
                     <SkillsItem name={"pandas"} logo={<Image src={pandas} alt="pandas" width={IMAGE_WIDTH} height={IMAGE_HEIGHT} />} proficiency={8} />
                     <SkillsItem name={"pillow"} logo={<FontAwesomeIcon icon={["fab", "python"]} size="3x" />} proficiency={8} />
