@@ -1,7 +1,6 @@
 import { styled, Tooltip, tooltipClasses, TooltipProps } from "@mui/material"
 import React, {  forwardRef, Ref } from "react"
 import { SkillsItemProps } from "../../../../lib/types"
-import HoverCircle from "../../animation-components/HoverCircle/HoverCircle"
 import { SkillsItemStyled, StyledSkillsItemContainer } from "./SkillsItem.styles";
 
 

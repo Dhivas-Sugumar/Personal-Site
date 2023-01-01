@@ -1,9 +1,10 @@
 import React from "react";
 import { H3, H4 } from "../../styles/styles";
+import { StyledFooterContainer } from "./Footer.styles";
 
 const Footer : React.FC = () => {
     return (
-        <footer>
+        <StyledFooterContainer>
             <div className="flex flex-row mt-9">
                 <div className="basis-9/12">
                 <H4>Made with 💖 and TypeScipt</H4>
@@ -13,7 +14,7 @@ const Footer : React.FC = () => {
 
                 </div>
             </div>
-        </footer>
+        </StyledFooterContainer>
     )
 }
 

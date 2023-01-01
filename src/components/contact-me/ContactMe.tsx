@@ -4,10 +4,11 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { H1} from "../../styles/styles";
 import ContactMeLink from "./ContactMeLink";
 import { Grid } from "@mui/material";
-import { StyledContactMeLinksContainer } from "./ContactMe.styles";
+import { ContactMeContainer, StyledContactMeLinksContainer } from "./ContactMe.styles";
  
 const ContactMe : React.FC = () => {
     return (
+      <ContactMeContainer>
         <Grid container spacing={2} id="contact">
           <Grid item xs={12}>
           <H1>Contact Me</H1>
@@ -31,6 +32,8 @@ const ContactMe : React.FC = () => {
     <ContactMeForm/>
   </Grid>
 </Grid>
+      </ContactMeContainer>
+
     )
 }
 

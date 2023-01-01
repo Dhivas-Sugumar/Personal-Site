@@ -2,10 +2,11 @@ import { Grid } from "@mui/material";
 import Image from "next/image";
 import React from "react";
 import Me from "../../assets/me.jpg"
-import { AboutMeText } from "./AboutMe.styles";
+import { AboutMeContainer, AboutMeText } from "./AboutMe.styles";
 
 const AboutMe : React.FC = () => {
     return (
+        <AboutMeContainer>
         <Grid container spacing={2}>
             <Grid item xs={8}>
             <AboutMeText>
@@ -20,6 +21,8 @@ const AboutMe : React.FC = () => {
             </Grid>
 
         </Grid>
+        </AboutMeContainer>
+
 
     )
 }

@@ -1,5 +1,4 @@
 import styled from "@emotion/styled";
-import {useTheme } from "@mui/material";
 
 const StyledSkillsItemContainer = styled.div`
   display: inline-block;

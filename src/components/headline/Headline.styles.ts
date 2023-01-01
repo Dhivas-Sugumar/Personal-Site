@@ -9,6 +9,8 @@ const HeadlineContainer = styled.div`
 position: static;
 display: flex;
     height: 35em;
+    padding: 5em 4em;
+
 
 
 `

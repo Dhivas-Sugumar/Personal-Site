@@ -10,7 +10,7 @@ import ruby from '../../assets/SkillLogos/ruby.svg'
 import postgreSQL from '../../assets/SkillLogos/postgresql.svg'
 
 
-import { ProjectsContainer } from "./Projects.styles"
+import { ProjectsContainer, ProjectsItemsContainer } from "./Projects.styles"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 
 const IMAGE_WIDTH = 46
@@ -18,9 +18,9 @@ const IMAGE_HEIGHT = 48
 
 const Projects : React.FC = () => {
     return (
-        <div id="projects">
+        <ProjectsContainer id="projects">
         <H1>Projects</H1>
-            <ProjectsContainer>
+            <ProjectsItemsContainer>
             <ProjectItem 
                 title={"Minerva"} 
                 image={<Image src={minerva} alt={'minerva site screenshot'} height={250} width={400}/>} 
@@ -45,9 +45,9 @@ const Projects : React.FC = () => {
 
                 ]}/>
                 
-            </ProjectsContainer>
+            </ProjectsItemsContainer>
 
-        </div>
+        </ProjectsContainer>
     )
 }
 

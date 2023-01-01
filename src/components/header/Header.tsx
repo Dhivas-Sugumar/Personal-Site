@@ -2,10 +2,11 @@ import React from "react";
 import { H3 } from "../../styles/styles";
 import TextLoop from "../animation-components/TextLoop/TextLoop";
 import SideNav from "../sidenav/SideNav";
+import { StyledHeaderContainer } from "./Header.styles";
  
 const Header : React.FC = () => {
     return (
-        <header className="mt-9">
+        <StyledHeaderContainer>
             <div className="flex flex-row">
             <H3 className="basis-5/12">DHIVAS SUGUMAR</H3>
             <H3 className="basis-7/12">
@@ -25,7 +26,7 @@ const Header : React.FC = () => {
             </H3>
             <SideNav/>
             </div>
-        </header>
+        </StyledHeaderContainer>
     )
 }
 
