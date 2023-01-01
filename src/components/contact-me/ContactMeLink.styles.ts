@@ -5,7 +5,7 @@ import { P } from "../../styles/styles";
 const StyledContactMeLinkContainer = styled(motion.div)`
 display: flex;
 flex-direction: row;
-width: 50%;
+width: 70%;
 margin: 2em 0;
 padding: 0.5em 0;
 border-radius: 2em;

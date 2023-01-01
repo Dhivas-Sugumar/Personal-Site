@@ -4,6 +4,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { H1} from "../../styles/styles";
 import ContactMeLink from "./ContactMeLink";
 import { Grid } from "@mui/material";
+import { StyledContactMeLinksContainer } from "./ContactMe.styles";
  
 const ContactMe : React.FC = () => {
     return (
@@ -13,7 +14,7 @@ const ContactMe : React.FC = () => {
 
           </Grid>
   <Grid item xs={4}>
-    <div>
+    <StyledContactMeLinksContainer>
             <ContactMeLink
             brand="Github"
             link="https://github.com/Dhivas-Sugumar"
@@ -24,7 +25,7 @@ const ContactMe : React.FC = () => {
             link="https://www.linkedin.com/in/dhivas-sugumar/"
             icon={<FontAwesomeIcon icon={["fab", "linkedin"]} size={"3x"}/>}
             />
-            </div>
+            </StyledContactMeLinksContainer>
   </Grid>
   <Grid item xs={8}>
     <ContactMeForm/>
