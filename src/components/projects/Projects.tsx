@@ -7,10 +7,11 @@ import rubymine from '../../assets/SkillLogos/jetbrains.svg'
 import rubyRails from '../../assets/SkillLogos/ruby-on-rails.svg'
 import heroku from '../../assets/SkillLogos/heroku.svg'
 import ruby from '../../assets/SkillLogos/ruby.svg'
+import postgreSQL from '../../assets/SkillLogos/postgresql.svg'
+
 
 import { ProjectsContainer } from "./Projects.styles"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-import ResumeItemDate from "../resume/ResumeItemDate"
 
 const IMAGE_WIDTH = 46
 const IMAGE_HEIGHT = 48
@@ -39,7 +40,7 @@ const Projects : React.FC = () => {
                 <FontAwesomeIcon icon={["fab", "html5"]} size="3x" />,
                 <FontAwesomeIcon icon={["fab", "css3"]} size="3x" />,
                 <FontAwesomeIcon icon={["fab", "js-square"]} size="3x" />,
-                <Image src={undefined} alt="SQL"  width={IMAGE_WIDTH} height={IMAGE_HEIGHT}/>,
+                <Image src={postgreSQL} alt="SQL"  width={IMAGE_WIDTH} height={IMAGE_HEIGHT}/>,
                 <Image src={rubymine} alt="ruby logo" width={IMAGE_WIDTH} height={IMAGE_HEIGHT}/>
 
                 ]}/>

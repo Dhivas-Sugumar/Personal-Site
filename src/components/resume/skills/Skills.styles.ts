@@ -1,8 +1,9 @@
 import styled from "@emotion/styled";
 
 const StyledSkillsRow = styled.div`
-    display: block;
+    display: flex;
     justify-content: center;
+    align-items:center;
 `
 
 const StyledSkillsHeading = styled.div`

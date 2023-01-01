@@ -2,7 +2,7 @@ import { Button, FormLabel, TextField } from "@mui/material";
 import React, { useState } from "react";
 import { Send } from "react-feather";
 import { H3, H4 } from "../../styles/styles";
-import { StyledContactMeForm, StyledContactMeFormInput, StyledContactMeFormInputContainer, StyledContactMeFormMessageField, StyledContactMeFormMessageInput } from "./ContactMe.styles";
+import { StyledContactMeForm, StyledContactMeFormButton, StyledContactMeFormButtonContainer, StyledContactMeFormHeading, StyledContactMeFormInput, StyledContactMeFormInputContainer, StyledContactMeFormMessageField, StyledContactMeFormMessageInput } from "./ContactMeForm.styles";
 
 const ContactMeForm: React.FC = () => {
 
@@ -40,9 +40,9 @@ const ContactMeForm: React.FC = () => {
 
   return (
     <StyledContactMeForm>
-      <div>
+      <StyledContactMeFormHeading>
         <H3>Reach Out!</H3>
-      </div>
+      </StyledContactMeFormHeading>
             <form onSubmit={handleSubmit}>
         <StyledContactMeFormInputContainer>
           <StyledContactMeFormInput>
@@ -79,15 +79,16 @@ const ContactMeForm: React.FC = () => {
           multiline
           minRows={8}
           required
+          style={{width:875}}
           onChange={e => setMessage(e.target.value)}
         />
     </StyledContactMeFormMessageInput>
       
-      <div>
-                <Button variant="contained" endIcon={<Send/>}>
+      <StyledContactMeFormButtonContainer>
+                <StyledContactMeFormButton variant="contained" endIcon={<Send/>}>
           Send
-        </Button>  
-      </div>
+        </StyledContactMeFormButton>  
+      </StyledContactMeFormButtonContainer>
     </form>  
     </StyledContactMeForm>
   

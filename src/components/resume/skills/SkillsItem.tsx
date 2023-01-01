@@ -10,10 +10,11 @@ const SkillsItemTooltip = styled(({ className, ...props }: TooltipProps) => (
   ))(({ theme }) => ({
     [`& .${tooltipClasses.tooltip}`]: {
         width: '12em',
-        backgroundColor: theme.palette.secondary.main,
+        backgroundColor: theme.palette.background.default,
         color: theme.palette.primary.main,
         textAlign: 'center',
         borderRadius: '1.2em',
+        border: '0.05em solid #000000',
         padding: '1em 1em',
         position: 'absolute',
         zIndex: 1,
