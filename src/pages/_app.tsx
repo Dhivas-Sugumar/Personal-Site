@@ -1,5 +1,5 @@
 import React from 'react'
-import { AppProps } from 'next/app'
+import type { AppProps } from 'next/app'
 import { createTheme, CssBaseline, PaletteMode, ThemeProvider } from '@mui/material'
 import '../styles/index.css'
 import "../styles/global.css";
@@ -25,6 +25,7 @@ function MyApp({ Component, pageProps }: AppProps) {
     () => createTheme(mode === "light" ? lightTheme : darkTheme),
     [mode]
   );
+  const AnyComponent = Component as any;
 
 
   return (
@@ -33,7 +34,7 @@ function MyApp({ Component, pageProps }: AppProps) {
       <ThemeProvider theme={theme}>
         <CssBaseline enableColorScheme />
         {/* <SwitchModeButton/> */}
-        <Component {...pageProps}/>
+        <AnyComponent {...pageProps}/>
       </ThemeProvider>
       </ColorContext.Provider>
   )

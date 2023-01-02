@@ -10,9 +10,9 @@ const AboutMe : React.FC = () => {
         <Grid container spacing={2}>
             <Grid item xs={9}>
             <AboutMeText>
-            Hi I'm Dhivas, a computer science
+            {`Hi I'm Dhivas, a computer science
             student at Northeastern university and software developer based in Boston.
-            Currently coding at Clora.
+            Currently coding at Clora.`}
         </AboutMeText>
             </Grid>
             <Grid item xs={3}>

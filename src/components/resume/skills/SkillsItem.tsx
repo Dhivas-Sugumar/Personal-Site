@@ -2,6 +2,7 @@ import { styled, Tooltip, tooltipClasses, TooltipProps } from "@mui/material"
 import React, {  forwardRef, Ref } from "react"
 import { SkillsItemProps } from "../../../../lib/types"
 import { SkillsItemStyled, StyledSkillsItemContainer } from "./SkillsItem.styles";
+import SkillsItemContent from "./SkillsItemContent";
 
 
 const SkillsItemTooltip = styled(({ className, ...props }: TooltipProps) => (
@@ -20,16 +21,6 @@ const SkillsItemTooltip = styled(({ className, ...props }: TooltipProps) => (
         marginTop: '-20em',
     },
   }));
-
-
-const SkillsItemContent = forwardRef((props: SkillsItemProps, ref : Ref<HTMLInputElement>) => {
-    return(  
-       
-    <SkillsItemStyled ref={ref} {...props}>
-        {props.logo}
-        <p>{props.name}</p>
-    </SkillsItemStyled>)
-})
 
 
 const SkillsItem: React.FC<SkillsItemProps> = (

@@ -32,16 +32,16 @@ const Projects : React.FC = () => {
                 'Deployed site using Heroku and Google Cloud storage.'
 
             ]}
-                technologies={[<Image src={rubyRails} alt="ruby on rails"  width={IMAGE_WIDTH} height={IMAGE_HEIGHT}/>,
-                <FontAwesomeIcon icon={["fab", "bootstrap"]} size="3x" />,
-                <Image src={heroku} alt="heroku" width={IMAGE_WIDTH} height={IMAGE_HEIGHT} />,
-                <FontAwesomeIcon icon={["fab", "google"]} size="3x" />,
-                <Image src={ruby} alt="ruby logo" width={IMAGE_WIDTH} height={IMAGE_HEIGHT}/>,
-                <FontAwesomeIcon icon={["fab", "html5"]} size="3x" />,
-                <FontAwesomeIcon icon={["fab", "css3"]} size="3x" />,
-                <FontAwesomeIcon icon={["fab", "js-square"]} size="3x" />,
-                <Image src={postgreSQL} alt="SQL"  width={IMAGE_WIDTH} height={IMAGE_HEIGHT}/>,
-                <Image src={rubymine} alt="ruby logo" width={IMAGE_WIDTH} height={IMAGE_HEIGHT}/>
+                technologies={[<Image key={1} src={rubyRails} alt="ruby on rails"  width={IMAGE_WIDTH} height={IMAGE_HEIGHT}/>,
+                <FontAwesomeIcon  key={1} icon={["fab", "bootstrap"]} size="3x" />,
+                <Image  key={1}  src={heroku} alt="heroku" width={IMAGE_WIDTH} height={IMAGE_HEIGHT} />,
+                <FontAwesomeIcon  key={1}  icon={["fab", "google"]} size="3x" />,
+                <Image  key={1}  src={ruby} alt="ruby logo" width={IMAGE_WIDTH} height={IMAGE_HEIGHT}/>,
+                <FontAwesomeIcon  key={1} icon={["fab", "html5"]} size="3x" />,
+                <FontAwesomeIcon key={1}  icon={["fab", "css3"]} size="3x" />,
+                <FontAwesomeIcon key={1} icon={["fab", "js-square"]} size="3x" />,
+                <Image key={1} src={postgreSQL} alt="SQL"  width={IMAGE_WIDTH} height={IMAGE_HEIGHT}/>,
+                <Image key={1} src={rubymine} alt="ruby logo" width={IMAGE_WIDTH} height={IMAGE_HEIGHT}/>
 
                 ]}/>
                 

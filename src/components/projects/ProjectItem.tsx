@@ -4,7 +4,7 @@ import Image from "next/image"
 import { ProjectItemProps } from "../../../lib/types"
 import { H3, H4, P } from "../../styles/styles"
 import ResumeItemDate from "../resume/ResumeItemDate"
-import { StyledProjectItemCard, StyledProjectItemContent, StyledProjectItemDate, StyledProjectItemImage, StyledProjectItemTechnologiesContainer, StyledProjectItemText, StyledProjectItemTitle, TechnologiesContainer } from "./ProjectItem.styles"
+import { StyledProjectItemCard, StyledProjectItemContent, StyledProjectItemDate, StyledProjectItemImage, StyledProjectItemTechnologiesContainer, StyledProjectItemTitle, TechnologiesContainer } from "./ProjectItem.styles"
 import bullet from "../../assets/bullet.png"
 const ProjectItem: React.FC<ProjectItemProps> = (
     {
