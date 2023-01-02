@@ -46,6 +46,10 @@ export type ProjectItemProps = {
     technologies: Array<ReactElement>
 }
 
+export type StyledFooterContentProps = {
+    alignment?: string
+}
+
 export interface ToolTipProps {
     proficiency: string;
   }
