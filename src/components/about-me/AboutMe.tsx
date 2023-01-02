@@ -8,14 +8,14 @@ const AboutMe : React.FC = () => {
     return (
         <AboutMeContainer>
         <Grid container spacing={2}>
-            <Grid item xs={8}>
+            <Grid item xs={9}>
             <AboutMeText>
             Hi I'm Dhivas, a computer science
             student at Northeastern university and software developer based in Boston.
             Currently coding at Clora.
         </AboutMeText>
             </Grid>
-            <Grid item xs={4}>
+            <Grid item xs={3}>
             <Image src={Me} width={400} height={500} alt={"Picture of Dhivas"}/>
 
             </Grid>

@@ -79,13 +79,13 @@ const ContactMeForm: React.FC = () => {
           multiline
           minRows={8}
           required
-          style={{width:875}}
+          style={{width:810}}
           onChange={e => setMessage(e.target.value)}
         />
     </StyledContactMeFormMessageInput>
       
       <StyledContactMeFormButtonContainer>
-                <StyledContactMeFormButton variant="contained" endIcon={<Send/>}>
+                <StyledContactMeFormButton variant="outlined" endIcon={<Send/>}>
           Send
         </StyledContactMeFormButton>  
       </StyledContactMeFormButtonContainer>
