@@ -9,11 +9,8 @@ const StyledFooter = styled.footer`
 const StyledFooterContainer = styled.div`
     display: flex;
     flex-direction: row;
-
+    align-items: center;
+    justify-content: center;
 `
 
-const StyledFooterContent = styled(H4)<StyledFooterContentProps>`
-    text-align: end;
-`
-
-export {StyledFooter, StyledFooterContainer, StyledFooterContent}
+export {StyledFooter, StyledFooterContainer}

@@ -1,12 +1,12 @@
 import React from "react";
-import { StyledFooter, StyledFooterContainer, StyledFooterContent} from "./Footer.styles";
+import { H4 } from "../../styles/styles";
+import { StyledFooter, StyledFooterContainer} from "./Footer.styles";
 
 const Footer : React.FC = () => {
     return (
         <StyledFooter>
             <StyledFooterContainer>
-                <StyledFooterContent alignment="start">Made with 💖 and TypeScipt</StyledFooterContent>
-                <StyledFooterContent>©Dhivas</StyledFooterContent>
+                <H4 >Made with 💖 and TypeScipt</H4>
             </StyledFooterContainer>
         </StyledFooter>
     )
