@@ -1,17 +1,17 @@
 import { ReactElement } from "react"
-import { IconProps } from "react-feather"
 
 export type ContactMeLinkProps = {
     brand: string
     link: string
-    icon: IconProps
+    icon: ReactElement
 }
 
 export type EducationItemProps = {
     school: string
     location: string
     level: string
-    dates: string
+    startDate: string
+    endDate: string
     degrees: string
     acheivements: string
     activities?: string
@@ -21,19 +21,43 @@ export type ExperienceItemProps = {
     company: string
     location: string
     title: string
-    dates: string
+    startDate: string
+    endDate: string
     description: Array<String>
 }
 
+export type ResumeItemDateProps = {
+    start: string
+    end: string
+}
+
 export type SkillsItemProps = {
-    type: string 
-    skills: Array<String>
+    name: string 
+    logo: ReactElement
+    proficiency?: number
 }
 
 export type ProjectItemProps = {
     title: string 
     image: ReactElement
-    date: string
-    description: string
+    startDate: string
+    endDate: string
+    description: Array<String>
     technologies: Array<ReactElement>
+}
+
+export type StyledFooterContentProps = {
+    alignment?: string
+}
+
+export interface ToolTipProps {
+    proficiency: string;
+  }
+
+export type TextLoopProps = {
+    texts: Array<String>
+}
+
+export type HoverCircleProps = {
+    child: ReactElement
 }

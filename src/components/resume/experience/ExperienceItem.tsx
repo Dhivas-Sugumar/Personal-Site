@@ -1,45 +1,53 @@
-import { Grid } from "@mui/material";
+import { Divider, Grid } from "@mui/material";
 import React from "react";
 import { ExperienceItemProps } from "../../../../lib/types";
-import { H4, P } from "../../../styles/styles";
+import { ResumeItemContainer, ResumeItemDivider, ResumeItemLocation, ResumeItemTitle } from "../ResumeItem.styles";
+import ResumeItemDate from "../ResumeItemDate";
 
 const ExperienceItem : React.FC<ExperienceItemProps> = (
     {
       company,
       location,
       title,
-      dates,
+      startDate,
+      endDate,
       description  
     }
 ) => {
     return(
-        <Grid container spacing={2}>
+        <ResumeItemContainer>
+<Grid container spacing={2}>
         <Grid item xs={10}>
             <Grid item xs={12}>
-                <H4>
-                    {company} | {location}
-                </H4>
+                <ResumeItemTitle>
+                {title}
+
+                </ResumeItemTitle>
             </Grid>
             <Grid item xs={12}>
-                <P>
-                    {title}
-                </P>
+                <ResumeItemLocation>
+                {company} | {location}
+
+                </ResumeItemLocation>
             </Grid>
-            <Grid item xs={12}>
+            <Grid item xs={12} className="mt-6">
                 <ul>
                     {description.map(
-                        (item) => {
-                            return <li>{item}</li>
+                        (item, index) => {
+                            return <li key={index}>{item}</li>
                         }
                     )}
                 </ul>
             </Grid>
         </Grid>
         <Grid item xs={2}>
-            <P>{dates}</P>
+                <ResumeItemDate start={startDate} end={endDate} />
         </Grid>
 
     </Grid>
+    <ResumeItemDivider/>
+        </ResumeItemContainer>
+        
     )
 }
 

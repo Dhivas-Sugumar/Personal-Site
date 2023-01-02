@@ -1,7 +1,8 @@
 import { Button, FormLabel, TextField } from "@mui/material";
 import React, { useState } from "react";
 import { Send } from "react-feather";
-import { RoundedBorderContainer } from "../../styles/styles";
+import { H3, H4 } from "../../styles/styles";
+import { StyledContactMeForm, StyledContactMeFormButton, StyledContactMeFormButtonContainer, StyledContactMeFormHeading, StyledContactMeFormInput, StyledContactMeFormInputContainer, StyledContactMeFormMessageField, StyledContactMeFormMessageInput } from "./ContactMeForm.styles";
 
 const ContactMeForm: React.FC = () => {
 
@@ -38,46 +39,59 @@ const ContactMeForm: React.FC = () => {
 
 
   return (
-    <RoundedBorderContainer>
-      <form onSubmit={handleSubmit}>
-      <div>
-        <FormLabel>
-          Name
-        </FormLabel>
+    <StyledContactMeForm>
+      <StyledContactMeFormHeading>
+        <H3>Reach Out!</H3>
+      </StyledContactMeFormHeading>
+            <form onSubmit={handleSubmit}>
+        <StyledContactMeFormInputContainer>
+          <StyledContactMeFormInput>
+            <H4>
+            Name
+            </H4>
+
         <TextField
           type="text"
           required
           onChange={e => setName(e.target.value)}
         />
+          </StyledContactMeFormInput>
 
-        <FormLabel>
-          Email
-        </FormLabel>
+          <StyledContactMeFormInput>
+
+          <H4>
+            Email
+            </H4>
         <TextField
           type="text"
           required
           onChange={e => setEmail(e.target.value)}
         />
-      </div>
-      <div>
-        <FormLabel>
-          Message
-        </FormLabel>
-        <TextField
+                  </StyledContactMeFormInput>
+
+        </StyledContactMeFormInputContainer>
+    <StyledContactMeFormMessageInput>
+    <H4>
+            {`What's on your mind?`}
+            </H4>
+        <StyledContactMeFormMessageField
           type="text"
-          placeholder="What's on your mind?"
+          multiline
+          minRows={8}
           required
+          style={{width:810}}
           onChange={e => setMessage(e.target.value)}
         />
-      </div>
-      <div>
-                <Button variant="contained" endIcon={<Send />}>
+    </StyledContactMeFormMessageInput>
+      
+      <StyledContactMeFormButtonContainer>
+                <StyledContactMeFormButton variant="outlined" endIcon={<Send/>}>
           Send
-        </Button>  
-      </div>
-    </form>
-    </RoundedBorderContainer>
-    
+        </StyledContactMeFormButton>  
+      </StyledContactMeFormButtonContainer>
+    </form>  
+    </StyledContactMeForm>
+  
   )
 }
 

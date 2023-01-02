@@ -1,31 +1,39 @@
 import React from "react";
 import ContactMeForm from "./ContactMeForm";
-import { GitHub, Linkedin  } from "react-feather";
-import { H3 } from "../../styles/styles";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { H1} from "../../styles/styles";
 import ContactMeLink from "./ContactMeLink";
 import { Grid } from "@mui/material";
+import { ContactMeContainer, StyledContactMeLinksContainer } from "./ContactMe.styles";
  
 const ContactMe : React.FC = () => {
     return (
+      <ContactMeContainer>
         <Grid container spacing={2} id="contact">
+          <Grid item xs={12}>
+          <H1>Contact Me</H1>
+
+          </Grid>
   <Grid item xs={4}>
-    <div>
+    <StyledContactMeLinksContainer>
             <ContactMeLink
-            brand="github"
+            brand="Github"
             link="https://github.com/Dhivas-Sugumar"
-            icon={<GitHub/>}
+            icon={<FontAwesomeIcon icon={["fab", "github"]} size={"3x"}/>}
             />
             <ContactMeLink
             brand="LinkedIn"
-            link="https://github.com/Dhivas-Sugumar"
-            icon={<Linkedin/>}
+            link="https://www.linkedin.com/in/dhivas-sugumar/"
+            icon={<FontAwesomeIcon icon={["fab", "linkedin"]} size={"3x"}/>}
             />
-            </div>
+            </StyledContactMeLinksContainer>
   </Grid>
   <Grid item xs={8}>
     <ContactMeForm/>
   </Grid>
 </Grid>
+      </ContactMeContainer>
+
     )
 }
 
