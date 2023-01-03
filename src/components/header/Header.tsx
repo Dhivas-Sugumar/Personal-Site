@@ -2,15 +2,15 @@ import React from "react";
 import { H3 } from "../../styles/styles";
 import TextLoop from "../animation-components/TextLoop/TextLoop";
 import SideNav from "../sidenav/SideNav";
-import { StyledHeaderContainer } from "./Header.styles";
+import { HeaderName, HeaderLoop, SideNavContainer, StyledHeaderContainer, HeaderLoopText } from "./Header.styles";
  
 const Header : React.FC = () => {
     return (
         <StyledHeaderContainer>
-            <div className="flex flex-row">
-            <H3 className="basis-5/12">DHIVAS SUGUMAR</H3>
-            <H3 className="basis-7/12">
-            <TextLoop texts={
+            <HeaderName>DHIVAS SUGUMAR</HeaderName>
+            <HeaderLoop>
+                <HeaderLoopText>
+                <TextLoop texts={
                     ["SOFTWARE DEVELOPER",
                      "STUDENT",
                      "DESIGNER",
@@ -23,9 +23,11 @@ const Header : React.FC = () => {
                     ]
                     } 
                 />
-            </H3>
-            <SideNav/>
-            </div>
+                </HeaderLoopText>
+            </HeaderLoop>
+                <SideNavContainer>
+                <SideNav/>
+                </SideNavContainer>
         </StyledHeaderContainer>
     )
 }
