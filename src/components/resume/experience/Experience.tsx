@@ -58,7 +58,7 @@ const Experience : React.FC = () => {
             location={"Boston, MA"}
             title={"Undergraduate Researcher"}
             startDate={"March 2021"}
-            endDate={"Sept 2022"}
+            endDate={"Nov 2022"}
             description={[
                 "Develop script to visualize year of health data gathered from smartwatches, and smartphonesfrom 250 participants .",
                 "Create custom script using python, and libraries such as pandas, and pillow to read and visualize2000+ raw .csv files.",

@@ -66,14 +66,14 @@ const Projects : React.FC = () => {
                 'Utilized material UI for components and animated components using Framer Motion.',
                 'Deployed site using Vercel.']}
                 technologies={[<Image key={1} src={typescript} alt="typescript"  width={IMAGE_WIDTH} height={IMAGE_HEIGHT}/>,
-                <FontAwesomeIcon icon={["fab", "react"]} size="3x" />,
+                <FontAwesomeIcon key={1} icon={["fab", "react"]} size="3x" />,
                 <FontAwesomeIcon  key={1} icon={["fab", "html5"]} size="3x" />,
-                <Image src={materialUi} alt="material ui"  width={IMAGE_WIDTH} height={IMAGE_HEIGHT}/>,
+                <Image key={1} src={materialUi} alt="material ui"  width={IMAGE_WIDTH} height={IMAGE_HEIGHT}/>,
                 <FontAwesomeIcon key={1}  icon={["fab", "css3"]} size="3x" />,
-                <Image src={next} alt="nextJS" width={IMAGE_WIDTH} height={IMAGE_HEIGHT} />,
+                <Image key={1} src={next} alt="nextJS" width={IMAGE_WIDTH} height={IMAGE_HEIGHT} />,
                 <Image  key={1}  src={vercel} alt="vercel" width={IMAGE_WIDTH} height={IMAGE_HEIGHT} />,
-                <Image src={framerMotion} alt="framer motion" width={IMAGE_WIDTH} height={IMAGE_HEIGHT} />,
-                <Image src={code} alt="visual studio code" width={IMAGE_WIDTH} height={IMAGE_HEIGHT} />,
+                <Image key={1}  src={framerMotion} alt="framer motion" width={IMAGE_WIDTH} height={IMAGE_HEIGHT} />,
+                <Image key={1} src={code} alt="visual studio code" width={IMAGE_WIDTH} height={IMAGE_HEIGHT} />,
             ]}/>
 
             <ProjectItem 
@@ -85,9 +85,9 @@ const Projects : React.FC = () => {
                 `Utilized pandas and numpy to read in 2000+ raw csv files and clean the watch telemtry data.`, 'Uses a custom made visulization scheme built using pillow to vizualize the data.'
             ]}
                 technologies={
-                    [<FontAwesomeIcon icon={["fab", "python"]} size="3x" />,
-                    <Image src={pandas} alt="pandas" width={IMAGE_WIDTH} height={IMAGE_HEIGHT} />,
-                    <Image src={pycharm} alt="pycharm" width={IMAGE_WIDTH} height={IMAGE_HEIGHT} />
+                    [<FontAwesomeIcon key={1} icon={["fab", "python"]} size="3x" />,
+                    <Image key={1} src={pandas} alt="pandas" width={IMAGE_WIDTH} height={IMAGE_HEIGHT} />,
+                    <Image key={1} src={pycharm} alt="pycharm" width={IMAGE_WIDTH} height={IMAGE_HEIGHT} />
             ]}/>
 
             <ProjectItem 
@@ -100,8 +100,8 @@ const Projects : React.FC = () => {
                 `Designed the UI and implemented it using Java Swing.`,
                 'Created a test suite to test functionality and view layout using JUnit.',
             ]}
-                technologies={[<FontAwesomeIcon icon={["fab", "java"]} size="3x" />,
-                <Image src={intellij} alt="IntelliJ" width={IMAGE_WIDTH} height={IMAGE_HEIGHT} />, 
+                technologies={[<FontAwesomeIcon key={1} icon={["fab", "java"]} size="3x" />,
+                <Image key={1} src={intellij} alt="IntelliJ" width={IMAGE_WIDTH} height={IMAGE_HEIGHT} />, 
             ]}/>
                 
             </ProjectsItemsContainer>
