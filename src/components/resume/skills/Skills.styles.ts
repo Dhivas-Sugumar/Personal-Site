@@ -4,6 +4,7 @@ const StyledSkillsRow = styled.div`
     display: flex;
     justify-content: center;
     align-items:center;
+    margin: 2em 0;
 `
 
 const StyledSkillsHeading = styled.div`
