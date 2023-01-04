@@ -8,6 +8,7 @@ const StyledProjectItemCard = styled.div`
 
     border-radius: 2em;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    margin: 2em 0;
 `
 
 const StyledProjectItemImage = styled.div`
