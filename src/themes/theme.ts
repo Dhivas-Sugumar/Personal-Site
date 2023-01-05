@@ -1,12 +1,5 @@
 import { createTheme } from '@mui/material/styles';
 
-const baseTheme = createTheme({
-  typography: {
-    fontFamily: "'Nunito Sans',Work Sans', sans-serif",
-    fontSize: 14,
-  }
-})
-
 const darkTheme = createTheme({
   typography: {
     fontFamily: "SourceCode, 'Nunito Sans' sans-serif",
@@ -50,5 +43,5 @@ const lightTheme = createTheme({
   }
 })
 
-export { darkTheme, lightTheme, baseTheme }
+export { darkTheme, lightTheme }
   
