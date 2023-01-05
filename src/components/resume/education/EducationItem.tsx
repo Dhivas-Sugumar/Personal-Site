@@ -1,9 +1,10 @@
-import { Grid } from "@mui/material";
 import React from "react";
+import useMediaQuery from '@mui/material/useMediaQuery'
 import { EducationItemProps } from "../../../../lib/types";
 import { H4, P } from "../../../styles/styles";
 import { ResumeItemContainer, ResumeItemDivider, ResumeItemLocation, ResumeItemTitle } from "../ResumeItem.styles";
 import ResumeItemDate from "../ResumeItemDate";
+import {max} from '../../../../lib/breakpoints'
 
 const EducationItem: React.FC<EducationItemProps> = (
     {
@@ -18,41 +19,26 @@ const EducationItem: React.FC<EducationItemProps> = (
         activities
     }
 ) => {
+    const isMobileVersion = useMediaQuery(max.tablet)
     return (
         <ResumeItemContainer>
-                    <Grid container spacing={2}>
-            <Grid item xs={10}>
-                <Grid item xs={12}>
                     <ResumeItemTitle>
                     {level}
                     </ResumeItemTitle>
-                </Grid>
-                <Grid item xs={12}>
                     <ResumeItemLocation>
                     {school} | {location}
                     </ResumeItemLocation>
-                </Grid>
-                <Grid item xs={12} className={"mt-4"}>
+                    {isMobileVersion && <ResumeItemDate start={startDate} end={endDate} />}
                     <P>
                         {degrees}
                     </P>
-                </Grid>
-                <Grid item xs={12} className={"mt-0.5"}>
                     <P>
                         Achievements: {acheivements}
                     </P>                 
-                </Grid>
-                <Grid item xs={12} className={"mt-0.5"}>
                     <P>
                          {activities && `Activities: ${activities}`  }
                     </P>                     
-                </Grid>
-            </Grid>
-            <Grid item xs={2}>
-                <ResumeItemDate start={startDate} end={endDate} />
-            </Grid>
-
-        </Grid>
+                {!isMobileVersion &&<ResumeItemDate start={startDate} end={endDate} />}
         <ResumeItemDivider/>
         </ResumeItemContainer>
 
