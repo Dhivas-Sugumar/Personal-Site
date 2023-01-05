@@ -14,7 +14,7 @@ import code from '../../assets/SkillLogos/visual-studio.svg'
 import typescript from '../../assets/SkillLogos/typescript.svg'
 import next from '../../assets/SkillLogos/nextjs.svg'
 import materialUi from '../../assets/SkillLogos/material-ui.svg'
-import portfolio from '../../assets/portfolio.jpg'
+import portfolio from '../../assets/portfolio.jpeg'
 import intellij from '../../assets/SkillLogos/intellij.svg'
 import pandas from '../../assets/SkillLogos/pandas.svg'
 import pycharm from '../../assets/SkillLogos/pycharm.svg'
@@ -58,7 +58,7 @@ const Projects : React.FC = () => {
 
             <ProjectItem 
                 title={"Portfolio"} 
-                image={<Image src={portfolio} alt={'porfolio site screenshot'} height={175} width={400}/>} 
+                image={<Image src={portfolio} alt={'porfolio site screenshot'} height={250} width={400}/>} 
                 startDate={"Nov 2022"} 
                 endDate={"present"}
                 description={['Developed full-stack web application using Typescript, React, NextJS, HTML,CSS',
@@ -78,11 +78,11 @@ const Projects : React.FC = () => {
 
             <ProjectItem 
                 title={"Dataviz"} 
-                image={<Image src={dataviz} alt={'dataviz screenshot'} height={175} width={200}/>} 
+                image={<Image src={dataviz} alt={'dataviz screenshot'} height={250} width={400}/>} 
                 startDate={"April 2021"} 
                 endDate={"Nov 2021"}
                 description={['A python based custom data wrangling and visualization script developed for the Northeastern Mhealth Lab.',
-                `Utilized pandas and numpy to read in 2000+ raw csv files and clean the watch telemtry data.`, 'Uses a custom made visulization scheme built using pillow to vizualize the data.'
+                `Utilized pandas and numpy to read in 2000+ raw csv files and clean the watch telemtry data.`, 'Used a custom made visulization scheme built using pillow to vizualize the data.'
             ]}
                 technologies={
                     [<FontAwesomeIcon key={1} icon={["fab", "python"]} size="3x" />,
@@ -92,7 +92,7 @@ const Projects : React.FC = () => {
 
             <ProjectItem 
                 title={"Image Editor"} 
-                image={<Image src={imageProcessor} alt={'image editor'} height={500} width={400}/>} 
+                image={<Image src={imageProcessor} alt={'image editor'} height={250} width={400}/>} 
                 startDate={"Oct 2021"} 
                 endDate={"Dec 2021"}
                 description={['Built image processing application using the MVC design pattern and OOD priniciples.',
