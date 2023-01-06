@@ -1,7 +1,8 @@
-import { Divider, Grid } from "@mui/material";
+import { Divider, Grid, useMediaQuery } from "@mui/material";
 import React from "react";
+import { max } from "../../../../lib/breakpoints";
 import { ExperienceItemProps } from "../../../../lib/types";
-import { ResumeItemContainer, ResumeItemDivider, ResumeItemLocation, ResumeItemTitle } from "../ResumeItem.styles";
+import { ResumeItemContainer, ResumeItemContentContainer, ResumeItemDateContainer, ResumeItemDivider, ResumeItemLocation, ResumeItemTitle } from "../ResumeItem.styles";
 import ResumeItemDate from "../ResumeItemDate";
 
 const ExperienceItem : React.FC<ExperienceItemProps> = (
@@ -14,23 +15,21 @@ const ExperienceItem : React.FC<ExperienceItemProps> = (
       description  
     }
 ) => {
+    const isMobileVersion = useMediaQuery(max.tablet)
     return(
         <ResumeItemContainer>
-<Grid container spacing={2}>
-        <Grid item xs={10}>
-            <Grid item xs={12}>
+                <ResumeItemContentContainer>
                 <ResumeItemTitle>
                 {title}
 
                 </ResumeItemTitle>
-            </Grid>
-            <Grid item xs={12}>
+
                 <ResumeItemLocation>
                 {company} | {location}
 
                 </ResumeItemLocation>
-            </Grid>
-            <Grid item xs={12} className="mt-6">
+                {isMobileVersion && <ResumeItemDate start={startDate} end={endDate} />}
+
                 <ul>
                     {description.map(
                         (item, index) => {
@@ -38,15 +37,14 @@ const ExperienceItem : React.FC<ExperienceItemProps> = (
                         }
                     )}
                 </ul>
-            </Grid>
-        </Grid>
-        <Grid item xs={2}>
-                <ResumeItemDate start={startDate} end={endDate} />
-        </Grid>
-
-    </Grid>
+                </ResumeItemContentContainer>
+                {!isMobileVersion &&
+                <ResumeItemDateContainer>
+                        <ResumeItemDate start={startDate} end={endDate} />
+                </ResumeItemDateContainer>  
+        }
     <ResumeItemDivider/>
-        </ResumeItemContainer>
+    </ResumeItemContainer>
         
     )
 }

@@ -2,7 +2,7 @@ import React from "react";
 import useMediaQuery from '@mui/material/useMediaQuery'
 import { EducationItemProps } from "../../../../lib/types";
 import { H4, P } from "../../../styles/styles";
-import { ResumeItemContainer, ResumeItemDivider, ResumeItemLocation, ResumeItemTitle } from "../ResumeItem.styles";
+import { ResumeItemContainer, ResumeItemContentContainer, ResumeItemContentContentContainer, ResumeItemDateContainer, ResumeItemDivider, ResumeItemLocation, ResumeItemTitle } from "../ResumeItem.styles";
 import ResumeItemDate from "../ResumeItemDate";
 import {max} from '../../../../lib/breakpoints'
 
@@ -22,7 +22,8 @@ const EducationItem: React.FC<EducationItemProps> = (
     const isMobileVersion = useMediaQuery(max.tablet)
     return (
         <ResumeItemContainer>
-                    <ResumeItemTitle>
+            <ResumeItemContentContainer>
+            <ResumeItemTitle>
                     {level}
                     </ResumeItemTitle>
                     <ResumeItemLocation>
@@ -37,8 +38,14 @@ const EducationItem: React.FC<EducationItemProps> = (
                     </P>                 
                     <P>
                          {activities && `Activities: ${activities}`  }
-                    </P>                     
-                {!isMobileVersion &&<ResumeItemDate start={startDate} end={endDate} />}
+                    </P>  
+            </ResumeItemContentContainer>
+         
+        {!isMobileVersion &&
+                <ResumeItemDateContainer>
+                        <ResumeItemDate start={startDate} end={endDate} />
+                </ResumeItemDateContainer>  
+        }
         <ResumeItemDivider/>
         </ResumeItemContainer>
 

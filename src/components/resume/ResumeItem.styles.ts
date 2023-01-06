@@ -4,6 +4,17 @@ import { H4, P } from "../../styles/styles";
 
 const ResumeItemContainer = styled.div`
     padding: 2em 4em;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+`
+
+const ResumeItemContentContainer = styled.div`
+    width: 87.5%;
+`
+
+const ResumeItemDateContainer = styled.div`
+    align-self: flex-end;
 `
 
 const ResumeItemTitle= styled(H4)`
@@ -16,8 +27,10 @@ const ResumeItemLocation = styled(P)`
 `
 
 const ResumeItemDivider = styled(Divider)`
-    margin-top: 3em;
+    margin: 1em 0;
 `
 
 export {ResumeItemContainer, ResumeItemTitle, ResumeItemLocation,
-    ResumeItemDivider}
+    ResumeItemDivider, ResumeItemContentContainer, 
+    ResumeItemDateContainer
+}
