@@ -2,7 +2,7 @@ import React from "react";
 import useMediaQuery from '@mui/material/useMediaQuery'
 import { EducationItemProps } from "../../../../lib/types";
 import { H4, P } from "../../../styles/styles";
-import { ResumeItemContainer, ResumeItemContentContainer, ResumeItemContentContentContainer, ResumeItemDateContainer, ResumeItemDivider, ResumeItemLocation, ResumeItemTitle } from "../ResumeItem.styles";
+import { ResumeItemContainer, ResumeItemContentContainer,ResumeItemDateContainer, ResumeItemDivider, ResumeItemLocation, ResumeItemTitle } from "../ResumeItem.styles";
 import ResumeItemDate from "../ResumeItemDate";
 import {max} from '../../../../lib/breakpoints'
 
