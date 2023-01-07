@@ -1,7 +1,11 @@
 import styled from "@emotion/styled";
+import { max } from "../../../../lib/breakpoints";
 
 const StyledSkillsItemContainer = styled.div`
   display: inline-block;
+  @media ${max.desktop} {
+    margin: 1em 0;
+  }
 `
 
 

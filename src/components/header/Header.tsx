@@ -1,14 +1,16 @@
 import React from "react";
-import { H3 } from "../../styles/styles";
+import useMediaQuery from '@mui/material/useMediaQuery';
 import TextLoop from "../animation-components/TextLoop/TextLoop";
 import SideNav from "../sidenav/SideNav";
 import { HeaderName, HeaderLoop, SideNavContainer, StyledHeaderContainer, HeaderLoopText } from "./Header.styles";
- 
+ import {min} from '../../../lib/breakpoints'
 const Header : React.FC = () => {
+
+    const showTextLoop = useMediaQuery(min.tabletLg)
     return (
         <StyledHeaderContainer>
             <HeaderName>DHIVAS SUGUMAR</HeaderName>
-            <HeaderLoop>
+            {showTextLoop && <HeaderLoop>
                 <HeaderLoopText>
                 <TextLoop texts={
                     ["SOFTWARE DEVELOPER",
@@ -24,7 +26,7 @@ const Header : React.FC = () => {
                     } 
                 />
                 </HeaderLoopText>
-            </HeaderLoop>
+            </HeaderLoop>}
                 <SideNavContainer>
                 <SideNav/>
                 </SideNavContainer>

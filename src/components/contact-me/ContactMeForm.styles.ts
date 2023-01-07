@@ -1,21 +1,32 @@
 import styled from "@emotion/styled";
 import { Button, TextField } from "@mui/material";
+import { max } from "../../../lib/breakpoints";
 import { StyledSkillsHeading } from "../resume/skills/Skills.styles";
 
 const StyledContactMeForm = styled.div`
 display: flex;
 flex-direction: column;
 align-content: center;
-width: 85%;
+width: 55%;
 height: 37.5em;
 border-radius: 2em;
+margin-left: 5em;
 border: 0.0.5em solid black;
     box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+
+    @media${max.tablet} {
+        margin: 0 1em;
+        height: 45em;
+        width: 110%;
+    }
 `
 const StyledContactMeFormInputContainer = styled.div`
     margin: 2em 2em;
     display: flex;
     flex-direction: row;
+    @media ${max.tablet} {
+        flex-direction: column; 
+    }
 `
 
 const StyledContactMeFormInput = styled.div`
@@ -39,8 +50,12 @@ width: 95%;
 `
 
 const StyledContactMeFormMessageField = styled(TextField)`
-width: 75%
+width: 88%;
 height: 10em;
+
+@media ${max.tablet} {
+    width: 75%;
+}
 `
 
 const StyledContactMeFormButtonContainer = styled.div`
@@ -49,6 +64,7 @@ const StyledContactMeFormButtonContainer = styled.div`
 `
 
 const StyledContactMeFormButton = styled(Button)`
+margin-top: 3em;
     margin-right: 6em;
     padding-right: 2em;
     color: #000000;
