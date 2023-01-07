@@ -13,7 +13,7 @@ const StyledProjectItemCard = styled.div`
 
     @media ${max.tablet} {
         flex-direction: column; 
-        height: 47.5em;
+        height: 60em;
     }
 `
 
@@ -26,6 +26,10 @@ const StyledProjectItemTitle = styled.div`
     @media ${max.tablet} {
         font-size: 4em; 
     }
+`
+
+const StyledProjectItemTextContainer = styled.div`
+    width: 90%;
 `
 
 const StyledProjectItemContent = styled.div`
@@ -63,4 +67,5 @@ const StyledProjectItemDate = styled.div`
 
 export { StyledProjectItemCard, StyledProjectItemImage,
      StyledProjectItemContent, StyledProjectItemTechnologiesContainer,
-     StyledProjectItemTitle, StyledProjectItemDate, TechnologiesContainer}
+     StyledProjectItemTitle, StyledProjectItemDate, TechnologiesContainer,
+     StyledProjectItemTextContainer}

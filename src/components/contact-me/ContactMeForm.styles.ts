@@ -15,8 +15,9 @@ border: 0.0.5em solid black;
     box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
 
     @media${max.tablet} {
+        margin: 0 1em;
         height: 45em;
-        width: 95%;
+        width: 110%;
     }
 `
 const StyledContactMeFormInputContainer = styled.div`
@@ -51,6 +52,10 @@ width: 95%;
 const StyledContactMeFormMessageField = styled(TextField)`
 width: 88%;
 height: 10em;
+
+@media ${max.tablet} {
+    width: 75%;
+}
 `
 
 const StyledContactMeFormButtonContainer = styled.div`

@@ -4,7 +4,7 @@ import Image from "next/image"
 import { ProjectItemProps } from "../../../lib/types"
 import { H3, H4, P } from "../../styles/styles"
 import ResumeItemDate from "../resume/ResumeItemDate"
-import { StyledProjectItemCard, StyledProjectItemContent, StyledProjectItemDate, StyledProjectItemImage, StyledProjectItemTechnologiesContainer, StyledProjectItemTitle, TechnologiesContainer } from "./ProjectItem.styles"
+import { StyledProjectItemCard, StyledProjectItemContent, StyledProjectItemDate, StyledProjectItemImage, StyledProjectItemTechnologiesContainer, StyledProjectItemTextContainer, StyledProjectItemTitle, TechnologiesContainer } from "./ProjectItem.styles"
 import bullet from "../../assets/bullet.png"
 import { max } from "../../../lib/breakpoints"
 const ProjectItem: React.FC<ProjectItemProps> = (
@@ -29,6 +29,7 @@ const ProjectItem: React.FC<ProjectItemProps> = (
                 {title}
             </StyledProjectItemTitle>
             {isMobileVersion && <ResumeItemDate start={startDate} end={endDate} />}
+            <StyledProjectItemTextContainer>
             <List>
             {description.map((item, index) => {
                 return (
@@ -45,6 +46,8 @@ const ProjectItem: React.FC<ProjectItemProps> = (
                 
 })}
             </List>
+            </StyledProjectItemTextContainer>
+
             <TechnologiesContainer>
             <H4>Technologies Used</H4>
                 <StyledProjectItemTechnologiesContainer>
