@@ -6,6 +6,7 @@ import "../styles/global.css";
 import { lightTheme, darkTheme } from '../themes/theme';
 import { ColorContext } from "../utils/ColorContext";
 import { SwitchModeButton } from '../components/buttons/switch-mode/SwitchModeButton';
+import Layout from '../components/Layout';
 
 function MyApp({ Component, pageProps }: AppProps) {
   const [mode, setMode] = React.useState<PaletteMode>("light");
@@ -34,6 +35,7 @@ function MyApp({ Component, pageProps }: AppProps) {
       <ThemeProvider theme={theme}>
         <CssBaseline enableColorScheme />
         {/* <SwitchModeButton/> */}
+        <Layout />
         <AnyComponent {...pageProps}/>
       </ThemeProvider>
       </ColorContext.Provider>
