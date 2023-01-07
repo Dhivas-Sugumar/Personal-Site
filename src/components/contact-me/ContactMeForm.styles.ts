@@ -7,9 +7,10 @@ const StyledContactMeForm = styled.div`
 display: flex;
 flex-direction: column;
 align-content: center;
-width: 85%;
+width: 55%;
 height: 37.5em;
 border-radius: 2em;
+margin-left: 5em;
 border: 0.0.5em solid black;
     box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
 
@@ -48,7 +49,7 @@ width: 95%;
 `
 
 const StyledContactMeFormMessageField = styled(TextField)`
-width: 75%
+width: 88%;
 height: 10em;
 `
 
@@ -58,6 +59,7 @@ const StyledContactMeFormButtonContainer = styled.div`
 `
 
 const StyledContactMeFormButton = styled(Button)`
+margin-top: 3em;
     margin-right: 6em;
     padding-right: 2em;
     color: #000000;

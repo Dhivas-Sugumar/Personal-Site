@@ -79,7 +79,6 @@ const ContactMeForm: React.FC = () => {
           multiline
           minRows={8}
           required
-          style={{width:810}}
           onChange={e => setMessage(e.target.value)}
         />
     </StyledContactMeFormMessageInput>

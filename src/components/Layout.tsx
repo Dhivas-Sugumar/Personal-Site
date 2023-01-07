@@ -17,6 +17,7 @@ const Layout = ({ children }: Props) => (
       <meta data-n-head="ssr" data-hid="author" name="author" content="Dhivas Sugumar"></meta>
       <meta data-n-head="ssr" data-hid="mobile-web-app-capable" name="mobile-web-app-capable" content="yes"></meta>
       <meta name="robots" content="index,follow"/>
+      <meta http-equiv = "content-language" content = "en"></meta>
     </Head>
   </div>
 )
