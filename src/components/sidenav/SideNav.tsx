@@ -1,15 +1,35 @@
 import React from "react"
+import { Link } from "react-scroll";
+
 import { P } from "../../styles/styles"
 
 const SideNav : React.FC = () => {
     return (
-        <div>
-            <P><a href="#intro">INTRO</a></P>
-            <P><a href="#resume">RESUME</a></P>
-            <P><a href="#projects">PROJECTS</a></P>
-            <P><a href="#contact">CONTACT</a></P>
+        <nav>
+            <ul>
+                <li>
+                <Link activeClass="active" smooth spy to="intro">
+                Intro
+              </Link>
+                </li>
+                <li>
+                <Link activeClass="active" smooth spy to="resume">
+                Resume
+              </Link>
+                </li>
+                <li>
+                <Link activeClass="active" smooth spy to="projects">
+                Projects
+              </Link>
+                </li>
+                <li>
+                <Link activeClass="active" smooth spy to="conatct">
+                Contact
+              </Link>
+                </li>
+            </ul>
 
-        </div>
+        </nav>
     )
 
 }
