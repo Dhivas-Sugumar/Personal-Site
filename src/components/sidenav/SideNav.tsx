@@ -2,10 +2,11 @@ import React from "react"
 import { Link } from "react-scroll";
 
 import { P } from "../../styles/styles"
+import { SideNavContainer } from "./Sidenav.styles";
 
 const SideNav : React.FC = () => {
     return (
-        <nav>
+        <SideNavContainer>
             <ul>
                 <li>
                 <Link activeClass="active" smooth spy to="intro">
@@ -29,7 +30,7 @@ const SideNav : React.FC = () => {
                 </li>
             </ul>
 
-        </nav>
+        </SideNavContainer>
     )
 
 }

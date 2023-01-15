@@ -27,9 +27,8 @@ const Header : React.FC = () => {
                 />
                 </HeaderLoopText>
             </HeaderLoop>}
-                <SideNavContainer>
+
                 <SideNav/>
-                </SideNavContainer>
         </StyledHeaderContainer>
     )
 }
