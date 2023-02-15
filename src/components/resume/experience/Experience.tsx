@@ -13,9 +13,10 @@ const Experience : React.FC = () => {
             startDate={"April 2022"}
             endDate={"present"}
             description={[
-                "Contributed to developing an email sender project to reduce friction for the social outreach team when sending personalized emails to multiple recipients. ",
-                "Participated in weekly meetings to make decisions on the technological stack, discuss solutions for problems, and improve code readability. ",
-                "Lead workshops team to develop informative workshops for the hackathon on a wide range of engineering and career topics.",
+                "Engineer an email sender to improve efficiency for outreach when sending personalized emails to multiple recipients by 85%.", 
+                "Push 50+ code commits across the internal tools, application portal, main site, and event-day based on Typescript, React.js, Material-UI, and Next.js",
+                "Participate in weekly meetings to make decisions on the technological stack, discuss features, and improve code quality.", 
+                "Lead workshops team to develop informative workshops for the hackathon on a wide range of engineering and career topics."
             ]} 
         />
         <ExperienceItem
@@ -34,11 +35,15 @@ const Experience : React.FC = () => {
             startDate={"July 2022"}
             endDate={"Dec 2022"}
             description={[
-                "Proposed and spearheaded a project to document the consultant profile taggings AI scripts built using python, sklearn, and xgboost.",
-                "Spearheaded initiatives such as consultant suggestions, search results pagination, and assigning a Clora rep for projects.",
-                "Worked on tickets to improve and bug-fix Clora's marketplace website and the internal facing site.",
-                "Shadowed product development processes to develop 2022 roadmap.",
-                "Contributed to code reviews, architecture decisions, and team processes in Agile scrum sprints.",
+                `Spearheaded initiatives such as consultant suggestions, search results pagination, and Clora rep for projects to
+                improve consultant search by 70% using ElasticSearch.`,
+                `Proposed and authored documentation for consultant profile tagging machine learning scripts built using python,
+                scikit-learn, xgboost, and SQL.`,
+                `Utilized SQL, Coresignal, AWS, and Rails to implement a REST API to create and/or update consultants in the
+                PostgreSQL database with newly mined consultant profiles.`,
+                `Authored 100+ commits to implement new features and maintain Clora's marketplace and internal web applications
+                based on React, Ruby on Rails, and Bootstrap.`,
+                `Contributed to 20+ code reviews, architecture decisions, and team processes in Agile scrum sprints.`
             ]} 
         />
         <ExperienceItem
