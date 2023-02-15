@@ -37,10 +37,10 @@ const Projects : React.FC = () => {
                 title={"Minerva"} 
                 image={<Image src={minerva} alt={'minerva site screenshot'} height={250} width={400}/>} 
                 startDate={"Dec 2021"} 
-                endDate={"present"}
-                description={['Developed full-stack web application using Ruby on Rails, PostgreSQL, Bootstrap, HTML,CSS, JavaScript.',
-                `Enables user to create their own educational courses with text and videos, as well as enroll in
-                courses created by instructors.`, 'Implemented user validation model, as well as database level validations for forms.',
+                endDate={"Jan 2023"}
+                description={[`Developed full-stack web application using the MVC design pattern that enables users to create and enroll in text
+                and video-based courses.`, `Implemented user validation model, as well as database level validations for forms. Developed full-stack web application using the MVC design pattern that enables users to create and enroll in text
+                and video-based courses.`,
                 'Deployed site using Heroku and Google Cloud storage.'
             ]}
                 technologies={[<Image key={1} src={rubyRails} alt="ruby on rails"  width={IMAGE_WIDTH} height={IMAGE_HEIGHT}/>,
@@ -61,10 +61,9 @@ const Projects : React.FC = () => {
                 image={<Image src={portfolio} alt={'porfolio site screenshot'} height={250} width={400}/>} 
                 startDate={"Nov 2022"} 
                 endDate={"present"}
-                description={['Developed full-stack web application using Typescript, React, NextJS, HTML,CSS',
-                `Designed the layout and style of components for the portfolio site.`, 'Implemented contact form using node mailer for ease of contact.',
-                'Utilized material UI for components and animated components using Framer Motion.',
-                'Deployed site using Vercel.']}
+                description={[`Developed full-stack web application using the MVC design pattern that enables users to create and enroll in text
+                and video-based courses.`,
+                `Design the layout and style of components for the portfolio site.`, 'Implement contact form using node mailer for ease of contact.',]}
                 technologies={[<Image key={1} src={typescript} alt="typescript"  width={IMAGE_WIDTH} height={IMAGE_HEIGHT}/>,
                 <FontAwesomeIcon key={1} icon={["fab", "react"]} size="3x" />,
                 <FontAwesomeIcon  key={1} icon={["fab", "html5"]} size="3x" />,
