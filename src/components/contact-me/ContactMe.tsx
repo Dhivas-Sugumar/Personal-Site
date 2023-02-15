@@ -11,7 +11,7 @@ const ContactMe : React.FC = () => {
   const isMobileVersion = useMediaQuery(max.tablet)
 
     return (
-      <ContactMeContainer>
+      <ContactMeContainer id="contact">
           <H1>Contact Me</H1>
           <ContactMeContentContainer>
           {!isMobileVersion && <StyledContactMeLinksContainer>

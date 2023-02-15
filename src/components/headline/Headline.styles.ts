@@ -15,4 +15,8 @@ display: flex;
 
 `
 
-export {HeadlineText, HeadlineContainer}
+const HeadlineTextContainer = styled.div`
+    text-align: center;
+`
+
+export {HeadlineText, HeadlineContainer, HeadlineTextContainer}

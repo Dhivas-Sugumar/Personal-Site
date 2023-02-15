@@ -28,6 +28,7 @@ const ResumeItemLocation = styled(P)`
 
 const ResumeItemDivider = styled(Divider)`
     margin: 1em 0;
+    background-color: #000000
 `
 
 export {ResumeItemContainer, ResumeItemTitle, ResumeItemLocation,

@@ -2,7 +2,7 @@ import { useMediaQuery } from "@mui/material";
 import React from "react";
 import { max } from "../../../lib/breakpoints";
 import TextLoop from "../animation-components/TextLoop/TextLoop";
-import { HeadlineContainer, HeadlineText } from "./Headline.styles";
+import { HeadlineContainer, HeadlineText, HeadlineTextContainer } from "./Headline.styles";
 
 
 const Headline : React.FC = () => {
@@ -13,6 +13,7 @@ const Headline : React.FC = () => {
     }
     return (
         <HeadlineContainer id="intro">
+            <HeadlineTextContainer>
             <HeadlineText>
                 <TextLoop texts={
                     ["SOFTWARE DEVELOPER",
@@ -28,6 +29,8 @@ const Headline : React.FC = () => {
                     } 
                 />
             </HeadlineText>
+            </HeadlineTextContainer>
+            
         </HeadlineContainer>
     )
 }
