@@ -10,22 +10,22 @@ const SideNav : React.FC = () => {
             <ul>
                 <li>
                 <Link activeClass="active" smooth spy to="intro">
-                Intro
+                <a>Intro</a>
               </Link>
                 </li>
                 <li>
                 <Link activeClass="active" smooth spy to="resume">
-                Resume
+                <a>Resume</a>
               </Link>
                 </li>
                 <li>
                 <Link activeClass="active" smooth spy to="projects">
-                Projects
+                <a>Projects</a>
               </Link>
                 </li>
                 <li>
-                <Link activeClass="active" smooth spy to="conatct">
-                Contact
+                <Link activeClass="active" smooth spy to="contact">
+                <a>Contact</a>
               </Link>
                 </li>
             </ul>
