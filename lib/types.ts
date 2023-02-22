@@ -29,6 +29,7 @@ export type ExperienceItemProps = {
 export type ResumeItemDateProps = {
     start: string
     end: string
+    isProject? : boolean
 }
 
 export type SkillsItemProps = {

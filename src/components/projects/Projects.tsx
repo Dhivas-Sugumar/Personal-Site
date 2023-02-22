@@ -35,7 +35,7 @@ const Projects : React.FC = () => {
             <ProjectsItemsContainer>
             <ProjectItem 
                 title={"Minerva"} 
-                image={<Image src={minerva} alt={'minerva site screenshot'} height={250} width={400}/>} 
+                image={<Image src={minerva} alt={'minerva site screenshot'} height={250} width={600}/>} 
                 startDate={"Dec 2021"} 
                 endDate={"Jan 2023"}
                 description={[`Developed full-stack web application using the MVC design pattern that enables users to create and enroll in text
