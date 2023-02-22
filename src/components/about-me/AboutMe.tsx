@@ -19,7 +19,7 @@ const AboutMe : React.FC = () => {
             I am currently coding as a full stack web developer for Hackbeanpot, Inc - a boston based hackathon.
             I am particularly interested in Mobile App development, cloud computing, and the use of machine learning to 
             percieve and understand human emotion. Outside of school and work I love to hike and travel, read philosophy, and window shop for my next house plant.
-            I would love to connect on any coding opportunities! `}
+            I would love to connect and chat on any opportunity!`}
         </AboutMeText>
             <Image src={Me} width={400} height={500} alt={"Picture of Dhivas"}/>
         </AboutMeContentContainer>
