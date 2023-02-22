@@ -10,7 +10,7 @@ type Props = {
 const Layout = ({ children }: Props) => (
   <div>
     <Head>
-      <title>Dhivas Sugumar | Software Developer</title>
+      <title>Dhivas Sugumar</title>
       <meta charSet="utf-8" />
       <meta name="viewport" content="initial-scale=1.0, width=device-width" />
       <meta name="description" content="Dhivas Sugumar, I am a Software Developer looking for new opportunities and projects."/>

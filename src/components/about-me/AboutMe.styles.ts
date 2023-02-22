@@ -2,7 +2,7 @@ import styled from "@emotion/styled";
 import { max } from "../../../lib/breakpoints";
 
 const AboutMeText = styled.h5`
-    font-size: 3em
+    font-size: 2em
 `
 
 const AboutMeContainer = styled.div`

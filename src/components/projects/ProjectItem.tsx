@@ -28,7 +28,7 @@ const ProjectItem: React.FC<ProjectItemProps> = (
             <StyledProjectItemTitle>
                 {title}
             </StyledProjectItemTitle>
-            {isMobileVersion && <ResumeItemDate start={startDate} end={endDate} />}
+            {isMobileVersion && <ResumeItemDate start={startDate} end={endDate} isProject={true} />}
             <StyledProjectItemTextContainer>
             <List>
             {description.map((item, index) => {
@@ -55,9 +55,9 @@ const ProjectItem: React.FC<ProjectItemProps> = (
                 </StyledProjectItemTechnologiesContainer>
             </TechnologiesContainer>
             </StyledProjectItemContent>
-            <StyledProjectItemDate>
-            {!isMobileVersion && <ResumeItemDate start={startDate} end={endDate} />}
-            </StyledProjectItemDate>
+            {/* <StyledProjectItemDate>
+            {!isMobileVersion && <ResumeItemDate start={startDate} end={endDate} isProject={true} />}
+            </StyledProjectItemDate> */}
         </StyledProjectItemCard>
         
     )

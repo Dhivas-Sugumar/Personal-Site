@@ -52,23 +52,23 @@ const Skills: React.FC = () => {
                 <SkillsItem name={"Typescript"} logo={<Image src={typescript} alt="typescript"  width={IMAGE_WIDTH} height={IMAGE_HEIGHT}/>} proficiency={8} />
                 <SkillsItem name={"SQL"} logo={<Image src={postgreSQL} alt="SQL"  width={IMAGE_WIDTH} height={IMAGE_HEIGHT}/>} proficiency={5} />
                 <SkillsItem name={"R"} logo={<Image src={r} alt="R" width={IMAGE_WIDTH} height={IMAGE_HEIGHT}/>} proficiency={3} />
-                <SkillsItem name={"C++"} logo={<Image src={c} alt="c++" width={IMAGE_WIDTH} height={IMAGE_HEIGHT} />} proficiency={4} />
+                <SkillsItem name={"C"} logo={<Image src={c} alt="c++" width={IMAGE_WIDTH} height={IMAGE_HEIGHT} />} proficiency={4} />
         </StyledSkillsRow>
         <StyledSkillsHeading>
         <H4>Software Tools</H4>
         </StyledSkillsHeading>
         <StyledSkillsRow>
                     <SkillsItem name={"Ruby Mine"} logo={<Image src={rubymine} alt="ruby logo" width={IMAGE_WIDTH} height={IMAGE_HEIGHT}/>} proficiency={8} />
-                    <SkillsItem name={"Visual Studio Code"} logo={<Image src={code} alt="visual studio code" width={IMAGE_WIDTH} height={IMAGE_HEIGHT}/>} proficiency={8} />
+                    <SkillsItem name={"Visual Studio Code"} logo={<Image src={code} alt="visual studio code" width={IMAGE_WIDTH} height={IMAGE_HEIGHT}/>} proficiency={10} />
                     <SkillsItem name={"Eclipse"} logo={<Image src={eclipse} alt="eclipse" width={IMAGE_WIDTH} height={IMAGE_HEIGHT} />} proficiency={8} />
                     <SkillsItem name={"PyCharm"} logo={<Image src={pycharm} alt="pycharm" width={IMAGE_WIDTH} height={IMAGE_HEIGHT} />} proficiency={8} />
                     <SkillsItem name={"IntelliJ"} logo={<Image src={intellij} alt="intellij" width={IMAGE_WIDTH} height={IMAGE_HEIGHT} />} proficiency={8} />
-                    <SkillsItem name={"AutoCAD"} logo={<Image src={autocad} alt="autocad" width={IMAGE_WIDTH} height={IMAGE_HEIGHT} />} proficiency={8} />
-                    <SkillsItem name={"Microsoft Suite"} logo={<Image src={microsoftOffice} alt="microsoft office"  width={IMAGE_WIDTH} height={IMAGE_HEIGHT}/>} proficiency={8} />
-                    <SkillsItem name={"Adobe Suite"} logo={<Image src={adobe} alt="adobe suite" width={IMAGE_WIDTH} height={IMAGE_HEIGHT} />} proficiency={8} />
-                    <SkillsItem name={"Jupyter Notebook"} logo={<Image src={jupyter} alt="jupyter" width={IMAGE_WIDTH} height={IMAGE_HEIGHT} />} proficiency={8} />
+                    <SkillsItem name={"AutoCAD"} logo={<Image src={autocad} alt="autocad" width={IMAGE_WIDTH} height={IMAGE_HEIGHT} />} proficiency={6} />
+                    <SkillsItem name={"Microsoft Suite"} logo={<Image src={microsoftOffice} alt="microsoft office"  width={IMAGE_WIDTH} height={IMAGE_HEIGHT}/>} proficiency={10} />
+                    <SkillsItem name={"Adobe Suite"} logo={<Image src={adobe} alt="adobe suite" width={IMAGE_WIDTH} height={IMAGE_HEIGHT} />} proficiency={6} />
+                    <SkillsItem name={"Jupyter Notebook"} logo={<Image src={jupyter} alt="jupyter" width={IMAGE_WIDTH} height={IMAGE_HEIGHT} />} proficiency={6} />
                     <SkillsItem name={"Heroku"} logo={<Image src={heroku} alt="heroku" width={IMAGE_WIDTH} height={IMAGE_HEIGHT} />} proficiency={8} />
-                    <SkillsItem name={"Vercel"} logo={<Image src={vercel} alt="vercel" width={IMAGE_WIDTH} height={IMAGE_HEIGHT} />} proficiency={8} />
+                    <SkillsItem name={"Vercel"} logo={<Image src={vercel} alt="vercel" width={IMAGE_WIDTH} height={IMAGE_HEIGHT} />} proficiency={7} />
                     <SkillsItem name={"Google Cloud"} logo={<FontAwesomeIcon icon={["fab", "google"]} size="3x" />} proficiency={8} />
         </StyledSkillsRow>
         <StyledSkillsHeading>
@@ -77,14 +77,14 @@ const Skills: React.FC = () => {
         <StyledSkillsRow>
                     <SkillsItem name={"React"} logo={<FontAwesomeIcon icon={["fab", "react"]} size="3x" />} proficiency={8} />
                     <SkillsItem name={"NextJS"} logo={<Image src={next} alt="nextJS" width={IMAGE_WIDTH} height={IMAGE_HEIGHT} />} proficiency={8} />
-                    <SkillsItem name={"NestJS"} logo={<Image src={nest} alt="nestJS" width={IMAGE_WIDTH} height={IMAGE_HEIGHT} />} proficiency={8} />
+                    <SkillsItem name={"NestJS"} logo={<Image src={nest} alt="nestJS" width={IMAGE_WIDTH} height={IMAGE_HEIGHT} />} proficiency={5} />
                     <SkillsItem name={"Bootstrap"} logo={<FontAwesomeIcon icon={["fab", "bootstrap"]} size="3x" />} proficiency={8} />
-                    <SkillsItem name={"Material UI"} logo={<Image src={materialUi} alt="material ui"  width={IMAGE_WIDTH} height={IMAGE_HEIGHT}/>} proficiency={8} />
-                    <SkillsItem name={"Framer Motion"} logo={<Image src={framerMotion} alt="framer motion" width={IMAGE_WIDTH} height={IMAGE_HEIGHT} />} proficiency={8} />
+                    <SkillsItem name={"Material UI"} logo={<Image src={materialUi} alt="material ui"  width={IMAGE_WIDTH} height={IMAGE_HEIGHT}/>} proficiency={7} />
+                    <SkillsItem name={"Framer Motion"} logo={<Image src={framerMotion} alt="framer motion" width={IMAGE_WIDTH} height={IMAGE_HEIGHT} />} proficiency={4} />
                     <SkillsItem name={"Ruby on Rails"} logo={<Image src={rubyRails} alt="ruby on rails"  width={IMAGE_WIDTH} height={IMAGE_HEIGHT}/>} proficiency={8} />
                     <SkillsItem name={"pandas"} logo={<Image src={pandas} alt="pandas" width={IMAGE_WIDTH} height={IMAGE_HEIGHT} />} proficiency={8} />
-                    <SkillsItem name={"pillow"} logo={<FontAwesomeIcon icon={["fab", "python"]} size="3x" />} proficiency={8} />
-                    <SkillsItem name={"scikit learn"} logo={<Image src={scikit} alt="scikit-learn" width={IMAGE_WIDTH} height={IMAGE_HEIGHT} />} proficiency={8} />
+                    <SkillsItem name={"pillow"} logo={<FontAwesomeIcon icon={["fab", "python"]} size="3x" />} proficiency={6} />
+                    <SkillsItem name={"scikit learn"} logo={<Image src={scikit} alt="scikit-learn" width={IMAGE_WIDTH} height={IMAGE_HEIGHT} />} proficiency={5} />
         </StyledSkillsRow>
 </>
         

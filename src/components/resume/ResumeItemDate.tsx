@@ -7,11 +7,19 @@ import { DateContainer, DateText } from "./ResumeItemDate.styles";
 
 const ResumeItemDate : React.FC<ResumeItemDateProps> = ({
     start,
-    end
+    end, 
+    isProject,
 }) => {
     const isMobileVersion = useMediaQuery(max.tablet)
-  
 
+    if (isProject) {
+        return(
+            <div>
+                {start}-{end}
+            </div>
+        )
+    }
+    else {
         if(isMobileVersion) {
             return(<DateContainer>
                 {start}-{end}
@@ -25,6 +33,9 @@ const ResumeItemDate : React.FC<ResumeItemDateProps> = ({
 
         </DateContainer>)
         }
+    }
+
+
 
 }
 

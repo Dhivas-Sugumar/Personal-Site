@@ -28,7 +28,7 @@ const ExperienceItem : React.FC<ExperienceItemProps> = (
                 {company} | {location}
 
                 </ResumeItemLocation>
-                {isMobileVersion && <ResumeItemDate start={startDate} end={endDate} />}
+                {isMobileVersion && <ResumeItemDate start={startDate} end={endDate} isProject={false} />}
 
                 <ul>
                     {description.map(
@@ -40,7 +40,7 @@ const ExperienceItem : React.FC<ExperienceItemProps> = (
                 </ResumeItemContentContainer>
                 {!isMobileVersion &&
                 <ResumeItemDateContainer>
-                        <ResumeItemDate start={startDate} end={endDate} />
+                        <ResumeItemDate start={startDate} end={endDate} isProject={false}/>
                 </ResumeItemDateContainer>  
         }
     <ResumeItemDivider/>

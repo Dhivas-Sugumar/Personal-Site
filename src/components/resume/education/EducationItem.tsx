@@ -29,7 +29,7 @@ const EducationItem: React.FC<EducationItemProps> = (
                     <ResumeItemLocation>
                     {school} | {location}
                     </ResumeItemLocation>
-                    {isMobileVersion && <ResumeItemDate start={startDate} end={endDate} />}
+                    {isMobileVersion && <ResumeItemDate start={startDate} end={endDate} isProject={false} />}
                     <P>
                         {degrees}
                     </P>
@@ -43,7 +43,7 @@ const EducationItem: React.FC<EducationItemProps> = (
          
         {!isMobileVersion &&
                 <ResumeItemDateContainer>
-                        <ResumeItemDate start={startDate} end={endDate} />
+                        <ResumeItemDate start={startDate} end={endDate} isProject={false} />
                 </ResumeItemDateContainer>  
         }
         <ResumeItemDivider/>
