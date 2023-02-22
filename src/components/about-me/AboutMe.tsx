@@ -14,9 +14,12 @@ const AboutMe : React.FC = () => {
         <H1>About Me</H1>
         <AboutMeContentContainer>
         <AboutMeText>
-            {`Hi I'm Dhivas, a computer science
+            {`Hiya I am Dhivas, a computer science
             student at Northeastern university and software developer based in Boston.
-            Currently coding at Hackbeanpot and teaching at Northeastern University.`}
+            I am currently coding as a full stack web developer for Hackbeanpot, Inc - a boston based hackathon.
+            I am particularly interested in Mobile App development, cloud computing, and the use of machine learning to 
+            percieve and understand human emotion. Outside of school and work I love to hike and travel, read philosophy, and window shop for my next house plant.
+            I would love to connect on any coding opportunities! `}
         </AboutMeText>
             <Image src={Me} width={400} height={500} alt={"Picture of Dhivas"}/>
         </AboutMeContentContainer>
