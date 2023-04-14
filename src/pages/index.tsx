@@ -7,10 +7,8 @@ import Projects from '../components/projects/Projects'
 import Resume from '../components/resume/Resume'
 import { BodyContainer, PageContainer } from '../styles/styles'
 import '../../lib/fontawesome'
-import { BrowserRouter, Router } from 'react-router-dom'
 
 const IndexPage = () => (
-  <BrowserRouter >
 <PageContainer>
   <Header />
   <BodyContainer>
@@ -22,7 +20,9 @@ const IndexPage = () => (
   </BodyContainer>
   <Footer />
   </PageContainer>
-  </BrowserRouter >
+
+
+
   
 )
 

@@ -4,6 +4,7 @@ import { BodyContainer, PageContainer } from '../../styles/styles'
 import '../../../lib/fontawesome'
 
 const NotesPage = () => (
+
   <PageContainer>
   <Header />
   <BodyContainer>
@@ -11,6 +12,7 @@ const NotesPage = () => (
   </BodyContainer>
   <Footer />
   </PageContainer>
+  
 )
 
 export default NotesPage

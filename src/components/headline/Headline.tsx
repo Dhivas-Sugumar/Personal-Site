@@ -3,7 +3,6 @@ import React from "react";
 import { max } from "../../../lib/breakpoints";
 import TextLoop from "../animation-components/TextLoop/TextLoop";
 import { HeadlineContainer, HeadlineText, HeadlineTextContainer } from "./Headline.styles";
-import { useHistory ,useLocation } from 'react-router-dom';
 
 
 
