@@ -47,6 +47,10 @@ export type ProjectItemProps = {
     technologies: Array<ReactElement>
 }
 
+export type SideNavProps = {
+    location: string
+}
+
 export type StyledFooterContentProps = {
     alignment?: string
 }

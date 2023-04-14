@@ -1,10 +1,12 @@
 import React from "react"
 import { Link } from "react-scroll";
+import { SideNavProps } from "../../../lib/types";
 
 import { P } from "../../styles/styles"
 import { SideNavContainer } from "./Sidenav.styles";
 
-const SideNav : React.FC = () => {
+const SideNav : React.FC<SideNavProps> = ({location}) => {
+  if (location == "home") {
     return (
         <SideNavContainer>
             <ul>
@@ -28,11 +30,27 @@ const SideNav : React.FC = () => {
                 <a>Contact</a>
               </Link>
                 </li>
+                <li>
+                  <Link href="/notes">Notes</Link>
+                </li>
             </ul>
 
         </SideNavContainer>
     )
 
+}
+return (
+  <SideNavContainer>
+    <ul>
+      <li>
+        <Link href="/">Home</Link>
+      </li>
+      <li>
+      <Link href="/notes">Notes</Link>
+      </li>
+    </ul>
+  </SideNavContainer>
+)
 }
 
 export default SideNav

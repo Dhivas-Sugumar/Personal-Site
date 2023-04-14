@@ -4,9 +4,11 @@ import TextLoop from "../animation-components/TextLoop/TextLoop";
 import SideNav from "../sidenav/SideNav";
 import { HeaderName, HeaderLoop, StyledHeaderContainer, HeaderLoopText } from "./Header.styles";
  import {min} from '../../../lib/breakpoints'
+import { useLocation } from "react-router-dom";
 const Header : React.FC = () => {
 
     const showTextLoop = useMediaQuery(min.tabletLg)
+
     return (
         <StyledHeaderContainer>
             <HeaderName>DHIVAS SUGUMAR</HeaderName>
@@ -28,7 +30,7 @@ const Header : React.FC = () => {
                 </HeaderLoopText>
             </HeaderLoop>}
 
-                <SideNav/>
+                <SideNav location={useLocation().pathname == "/" ? "home" : "notes"}/>
         </StyledHeaderContainer>
     )
 }
