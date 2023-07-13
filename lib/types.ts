@@ -47,6 +47,11 @@ export type ProjectItemProps = {
     technologies: Array<ReactElement>
 }
 
+export type NoteProps = {
+    title: string, 
+    content: any
+}
+
 export type SideNavProps = {
     location: string
 }
