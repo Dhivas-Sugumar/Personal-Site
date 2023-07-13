@@ -32,7 +32,6 @@ const SideNav : React.FC<SideNavProps> = ({location}) => {
               </Link>
                 </li>
                 <li>
-                  <Link href="/notes">Notes</Link>
                 </li>
             </ul>
 

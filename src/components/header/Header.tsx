@@ -5,6 +5,7 @@ import SideNav from "../sidenav/SideNav";
 import { HeaderName, HeaderLoop, StyledHeaderContainer, HeaderLoopText } from "./Header.styles";
  import {min} from '../../../lib/breakpoints'
 import { useRouter } from "next/router";
+import Link from "next/link";
 const Header : React.FC = () => {
 
     const showTextLoop = useMediaQuery(min.tabletLg)
@@ -30,7 +31,7 @@ const Header : React.FC = () => {
                 />
                 </HeaderLoopText>
             </HeaderLoop>}
-
+            <Link href="/notes">Notes</Link>
                 <SideNav location={ useRouter().pathname == "/" ? "home" : "notes"}/>
         </StyledHeaderContainer>
         
