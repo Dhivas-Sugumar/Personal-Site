@@ -12,7 +12,6 @@ const NotesPage = () => (
   <BodyContainer>
     <NotesHeader/>
     <NotesContentsList/>
-    
   </BodyContainer>
   <Footer />
   </PageContainer>

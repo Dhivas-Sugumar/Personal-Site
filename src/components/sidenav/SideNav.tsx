@@ -6,7 +6,8 @@ import { P } from "../../styles/styles"
 import { SideNavContainer } from "./Sidenav.styles";
 
 const SideNav : React.FC<SideNavProps> = ({location}) => {
-  if (location == "home") {
+  console.log(location)
+  if (location === "home") {
     return (
         <SideNavContainer>
             <ul>
