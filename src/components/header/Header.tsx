@@ -34,7 +34,7 @@ const Header: React.FC = () => {
                     />
                 </HeaderLoopText>
             </HeaderLoop>}
-            <SideNav />
+            {path === "/" && <SideNav />}
         </StyledHeaderContainer>
 
     )
