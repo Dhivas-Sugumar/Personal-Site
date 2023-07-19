@@ -52,10 +52,6 @@ export type NoteProps = {
     content: any
 }
 
-export type SideNavProps = {
-    location: string
-}
-
 export type StyledFooterContentProps = {
     alignment?: string
 }
