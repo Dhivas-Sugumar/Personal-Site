@@ -8,7 +8,10 @@ const NotesHeader = () => {
     <H1>Notes</H1>
     <AboutMeContentContainer>
     <AboutMeText>
-        {`Dear Reader,\n This is a collection of notes on topics that intrigued my mind one random moment of time. These notes are sometimes personal, soemtimes politica, and other times pure nonsense. There is no rhyme or reason to them or to the order, it is simply a thought transfered into a note for my future self and others to read. Enjoy : )\n`}
+        {`Dear Reader,\n this is a collection of notes. 
+        These notes are random thoughts that surfaced in my brain at some random moment in time. These electrical signals that formed my thought are translated 
+        to words represented through 1s and 0s. These notes are sometimes personal, sometimes opinions, and other times
+        pure nonsense. These notes are for my future self and for readers like yourself. Enjoy : )\n`}
     </AboutMeText>
     </AboutMeContentContainer>
     </AboutMeContainer>
