@@ -9,7 +9,7 @@ import { BodyContainer, PageContainer } from '../styles/styles'
 import '../../lib/fontawesome'
 
 const IndexPage = () => (
-  <PageContainer>
+<PageContainer>
   <Header />
   <BodyContainer>
     <Headline/>
@@ -20,6 +20,10 @@ const IndexPage = () => (
   </BodyContainer>
   <Footer />
   </PageContainer>
+
+
+
+  
 )
 
 export default IndexPage

@@ -1,38 +1,40 @@
 import React from "react"
-import { Link } from "react-scroll";
-
-import { P } from "../../styles/styles"
+import { Link as ScrollLink } from "react-scroll";
+import Link from 'next/link'
 import { SideNavContainer } from "./Sidenav.styles";
 
-const SideNav : React.FC = () => {
+const SideNav: React.FC = () => {
     return (
-        <SideNavContainer>
-            <ul>
-                <li>
-                <Link activeClass="active" smooth spy to="intro">
-                <a>Intro</a>
-              </Link>
-                </li>
-                <li>
-                <Link activeClass="active" smooth spy to="resume">
-                <a>Resume</a>
-              </Link>
-                </li>
-                <li>
-                <Link activeClass="active" smooth spy to="projects">
-                <a>Projects</a>
-              </Link>
-                </li>
-                <li>
-                <Link activeClass="active" smooth spy to="contact">
-                <a>Contact</a>
-              </Link>
-                </li>
-            </ul>
+      <SideNavContainer>
+        <ul>
+          <li>
+            <ScrollLink activeClass="active" smooth spy to="intro">
+              <a>Intro</a>
+            </ScrollLink>
+          </li>
+          <li>
+            <ScrollLink activeClass="active" smooth spy to="resume">
+              <a>Resume</a>
+            </ScrollLink>
+          </li>
+          <li>
+            <ScrollLink activeClass="active" smooth spy to="projects">
+              <a>Projects</a>
+            </ScrollLink>
+          </li>
+          <li>
+            <ScrollLink activeClass="active" smooth spy to="contact">
+              <a>Contact</a>
+            </ScrollLink>
+          </li>
+          <li>
+            <Link href="/notes">Notes</Link>
+          </li>
+        </ul>
 
-        </SideNavContainer>
+      </SideNavContainer>
     )
 
-}
+  }
 
 export default SideNav

@@ -19,8 +19,11 @@ const HeaderLoop = styled.div`
 const HeaderLoopText = styled(H3)`
     margin-right: 20em;
 `
+const StyledHeaderNotesContainer = styled.div`
+float: right;
+`
 
 
 
 export {StyledHeaderContainer, HeaderName, 
-    HeaderLoop, HeaderLoopText}
+    HeaderLoop, HeaderLoopText, StyledHeaderNotesContainer}

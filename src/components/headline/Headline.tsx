@@ -5,8 +5,10 @@ import TextLoop from "../animation-components/TextLoop/TextLoop";
 import { HeadlineContainer, HeadlineText, HeadlineTextContainer } from "./Headline.styles";
 
 
+
 const Headline : React.FC = () => {
     const isMobileVersion = useMediaQuery(max.tablet)
+
 
     if (isMobileVersion) {
         return null;
