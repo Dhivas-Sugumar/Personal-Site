@@ -1,5 +1,6 @@
 import React from "react"
-import { Link } from "react-scroll";
+import { Link as ScrollLink} from "react-scroll";
+import Link from 'next/link'
 import { SideNavProps } from "../../../lib/types";
 
 import { P } from "../../styles/styles"
@@ -12,24 +13,24 @@ const SideNav : React.FC<SideNavProps> = ({location}) => {
         <SideNavContainer>
             <ul>
                 <li>
-                <Link activeClass="active" smooth spy to="intro">
+                <ScrollLink activeClass="active" smooth spy to="intro">
                 <a>Intro</a>
-              </Link>
+              </ScrollLink>
                 </li>
                 <li>
-                <Link activeClass="active" smooth spy to="resume">
+                <ScrollLink activeClass="active" smooth spy to="resume">
                 <a>Resume</a>
-              </Link>
+              </ScrollLink>
                 </li>
                 <li>
-                <Link activeClass="active" smooth spy to="projects">
+                <ScrollLink activeClass="active" smooth spy to="projects">
                 <a>Projects</a>
-              </Link>
+              </ScrollLink>
                 </li>
                 <li>
-                <Link activeClass="active" smooth spy to="contact">
+                <ScrollLink activeClass="active" smooth spy to="contact">
                 <a>Contact</a>
-              </Link>
+              </ScrollLink>
                 </li>
                 <li>
                 </li>
