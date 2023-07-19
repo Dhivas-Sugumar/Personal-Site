@@ -1,8 +1,8 @@
 import { List, ListItem, ListItemText } from "@mui/material"
-import { notes } from "../../pages/notes/list"
 import Link from "next/link"
 import { NotesContentsListContainer, StyledListItem } from "./NotesContentsList.styles"
 import { H2, H4 } from "../../styles/styles"
+import notes from "../../pages/notes"
 
 
 const NotesContentsList = () => {
